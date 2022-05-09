@@ -1,34 +1,33 @@
 .flex-container
 {
+    background-color: #000;
     display: flex;
+    justify-content: space-around;
 }
 
-.nav-bar-border
+.flexbox-item
 {
-    background-color: black;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.nav-bar-link
+.demarks-logo
 {
-    align-self: center;
-    height: 100%;
-    margin-left: 1rem;
+    margin-top: 0.5rem;
+   
+}
+
+.demarks-nav-bar-link
+{
     font-size: 2rem;
     color: white;
     text-decoration: none;
 }
 
-.nav-bar-link:hover
+.demarks-nav-bar-link:hover
 {
-    color: lightgray;
     opacity: 50%;
-}
-
-.andy-demarks-logo
-{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
 }
 
 .andy-demarks-logo:hover
