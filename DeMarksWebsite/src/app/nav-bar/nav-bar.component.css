@@ -1,0 +1,42 @@
+.flex-container
+{
+    display: flex;
+}
+
+.nav-bar-border
+{
+    background-color: black;
+    width: 100%;
+}
+
+.nav-bar-link
+{
+    align-self: center;
+    height: 100%;
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar-link:hover
+{
+    color: lightgray;
+    opacity: 50%;
+}
+
+.andy-demarks-logo
+{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.andy-demarks-logo:hover
+{
+    opacity: 50%;
+}
+
+.ytlink
+{
+    color: white;
+}
