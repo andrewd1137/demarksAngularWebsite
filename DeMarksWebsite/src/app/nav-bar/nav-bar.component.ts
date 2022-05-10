@@ -1,5 +1,5 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar',
@@ -25,6 +25,11 @@ export class NavBarComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     this.state = 'maximum';
+  }
+
+  toggle()
+  {
+    
   }
 
 }

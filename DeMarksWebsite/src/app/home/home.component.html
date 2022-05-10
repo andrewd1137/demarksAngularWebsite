@@ -1,0 +1,13 @@
+<!-- !! Removed the [@navBarTrigger]=state until it is finished and working -->
+<div class="home-container">
+    <div class="home-box"><img class="home-img" src="../assets/images/freefall.png" alt="Picture of me freefalling"></div>
+    <div [@popOverState]="adventureState" class="home-box home-box-fill" (mouseover)="changeAdventureText=true" (mouseout)="changeAdventureText=false">
+        <span *ngIf="!changeAdventureText" class="box-main-text" style="color: white;">Adventurous</span>
+        <span *ngIf="changeAdventureText" class="box-sub-text">I enjoy trying new things and living out of my comfort zone!</span>
+    </div>
+    <div [@popOverState]="developerState" class="home-box home-box-fill" (mouseover)="changeDeveloperText=true" (mouseout)="changeDeveloperText=false">
+        <span *ngIf="!changeDeveloperText" class="box-main-text" style="color: white;">Developer</span>
+        <span *ngIf="changeDeveloperText" class="box-sub-text">Codes with Angular (TS), C#, Python, and JS.</span>
+    </div>
+    <div class="home-box home-box-fill"><img class="home-img" src="../assets/images/setup.png" alt="Picture of me freefalling"></div>
+</div>

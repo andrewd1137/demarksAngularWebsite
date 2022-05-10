@@ -1,0 +1,41 @@
+.home-container
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    height: 73vh;
+    background-color:#fff;
+    display:grid;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+}
+
+.home-box
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:sans-serif;
+}
+
+.home-box-fill
+{
+    background-color: #000;
+    color: #FFF;
+}
+
+.home-img
+{
+    width: 100%;
+}
+
+.box-main-text
+{
+    font-size: 7rem;
+}
+
+.box-sub-text
+{
+    font-size: 2rem;
+}
