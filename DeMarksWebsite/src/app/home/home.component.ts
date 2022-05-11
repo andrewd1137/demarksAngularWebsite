@@ -15,9 +15,22 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
         })),
         transition('maximum => none', animate('1500ms'))
     ]),
+    trigger('transitionLeftState', [
+        transition('void => *', [
+          style({transform: 'translateX(-100%)'}),
+          animate('1000ms')
+        ])      
+    ]),
+    trigger('transitionRightState', [
+      transition('void => *', [
+        style({transform: 'translateX(100%)'}),
+        animate('1000ms')
+      ])      
+  ])
   ] 
 })
 export class HomeComponent implements AfterViewInit{
+  transition:string = 'none';
 
   changeAdventureText:boolean = false;
   changeDeveloperText:boolean = false;
@@ -26,6 +39,7 @@ export class HomeComponent implements AfterViewInit{
   
   ngAfterViewInit(): void {
     //TODO: make this cause the boxes to animate onto the screen
+    this.transition = 'none';
   }
 
   get adventureState()
