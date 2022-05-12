@@ -1,6 +1,74 @@
-.about-container
-{   margin-top: 2rem;
+.about-me-container
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    background-color:#fff;
+    display:grid;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    overflow-x: hidden;
+}
+
+.about-me-box
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:sans-serif;
+}
+
+.flex-container
+{
+    margin-top: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
+    display: flex;
+    justify-content: space-around;
     overflow-x: hidden;
+}
+
+.flexbox-item
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-img-heading
+{
+    width: 600px;
+    height: 523px;
+    background-color: black;
+}
+
+.about-img
+{
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 302px;
+    max-height: 302px;
+    background-color: black;
+}
+
+.about-img:hover
+{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.about-me-heading
+{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about-me-text
+{
+    margin-top: 0.5rem;
+    font-weight: normal;
+    text-align: left;
+    font-size: 2rem;
 }

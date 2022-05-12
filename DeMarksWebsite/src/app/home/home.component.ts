@@ -1,6 +1,6 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { transition, trigger, useAnimation } from '@angular/animations';
-import { bounceInLeft, bounceInRight, jello, rubberBand } from 'ng-animate';
+import { bounceInLeft, bounceInRight, rubberBand, tada } from 'ng-animate';
 
 @Component({
   selector: 'app-home',
@@ -13,8 +13,8 @@ import { bounceInLeft, bounceInRight, jello, rubberBand } from 'ng-animate';
         params: { timing: 1 }
       }))
     ]),
-    trigger('jelloState', [
-      transition('* => *', useAnimation(jello, {
+    trigger('tadaState', [
+      transition('* => *', useAnimation(tada, {
         // Set the duration to 5seconds and delay to 2seconds
         params: { timing: 1 }
       }))
