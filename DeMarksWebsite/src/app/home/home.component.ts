@@ -1,60 +1,177 @@
 import { AfterViewInit, Component } from '@angular/core';
-import { animate, state, style, transition, trigger } from '@angular/animations';
+import { transition, trigger, useAnimation } from '@angular/animations';
+import { bounceInLeft, bounceInRight, jello, rubberBand } from 'ng-animate';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   animations: [
-    trigger('popOverState', [
-        state('none, void', style({
-          color: '#fff',
-        })),
-        state('maximum', style({
-          color: "#000"
-        })),
-        transition('maximum => none', animate('1500ms'))
+    trigger('rubberBandState', [
+      transition('* => *', useAnimation(rubberBand, {
+        // Set the duration to 5seconds and delay to 2seconds
+        params: { timing: 1 }
+      }))
+    ]),
+    trigger('jelloState', [
+      transition('* => *', useAnimation(jello, {
+        // Set the duration to 5seconds and delay to 2seconds
+        params: { timing: 1 }
+      }))
     ]),
     trigger('transitionLeftState', [
-        transition('void => *', [
-          style({transform: 'translateX(-100%)'}),
-          animate('1000ms')
-        ])      
+      transition('void => *', useAnimation(bounceInLeft, {
+        // Set the duration to 5seconds and delay to 2seconds
+        params: { timing: 5 }
+      }))
     ]),
     trigger('transitionRightState', [
-      transition('void => *', [
-        style({transform: 'translateX(100%)'}),
-        animate('1000ms')
-      ])      
-  ])
+      transition('void => *', useAnimation(bounceInRight, {
+        // Set the duration to 5seconds and delay to 2seconds
+        params: { timing: 5 }
+      }))
+    ])
   ] 
 })
 export class HomeComponent implements AfterViewInit{
   transition:string = 'none';
 
-  changeAdventureText:boolean = false;
-  changeDeveloperText:boolean = false;
+  //Booleans for Adventure sate
+  changeAdventureTextA:boolean = false; //A
+  changeAdventureTextD:boolean = false; //d
+  changeAdventureTextV:boolean = false; //v
+  changeAdventureTextE:boolean = false; //e
+  changeAdventureTextN:boolean = false; //n
+  changeAdventureTextT:boolean = false; //t
+  changeAdventureTextU1:boolean = false;//u1
+  changeAdventureTextR:boolean = false; //r
+  changeAdventureTextO:boolean = false; //o
+  changeAdventureTextU2:boolean = false;//u2
+  changeAdventureTextS:boolean = false; //s
+
+  //Booleans for Developer state
+  changeDeveloperTextD:boolean = false; //D
+  changeDeveloperTextE1:boolean = false; //e1
+  changeDeveloperTextV:boolean = false; //v
+  changeDeveloperTextE2:boolean = false; //e2
+  changeDeveloperTextL:boolean = false; //l
+  changeDeveloperTextO:boolean = false; //o
+  changeDeveloperTextP:boolean = false; //p
+  changeDeveloperTextE3:boolean = false; //e3
+  changeDeveloperTextR:boolean = false; //r
+
 
   constructor() { }
   
   ngAfterViewInit(): void {
-    //TODO: make this cause the boxes to animate onto the screen
     this.transition = 'none';
   }
 
-  get adventureState()
+  //All the states for 'Adventuruous' word on home page
+  get adventureStateA()
   {
-    return this.changeAdventureText ? 'none' : 'maximum';
+    return this.changeAdventureTextA ? 'none' : 'maximum';
   }
 
-  get developerState()
+  get adventureStateD()
   {
-    return this.changeDeveloperText ? 'none' : 'maximum';
+    return this.changeAdventureTextD ? 'none' : 'maximum';
+  }
+
+  get adventureStateV()
+  {
+    return this.changeAdventureTextV ? 'none' : 'maximum';
+  }
+
+  get adventureStateE()
+  {
+    return this.changeAdventureTextE ? 'none' : 'maximum';
+  }
+
+  get adventureStateN()
+  {
+    return this.changeAdventureTextN ? 'none' : 'maximum';
+  }
+
+  get adventureStateT()
+  {
+    return this.changeAdventureTextT ? 'none' : 'maximum';
+  }
+
+  get adventureStateU1()
+  {
+    return this.changeAdventureTextU1 ? 'none' : 'maximum';
+  }
+
+  get adventureStateR()
+  {
+    return this.changeAdventureTextR ? 'none' : 'maximum';
+  }
+  
+  get adventureStateO()
+  {
+    return this.changeAdventureTextO ? 'none' : 'maximum';
+  }
+
+  get adventureStateU2()
+  {
+    return this.changeAdventureTextU2 ? 'none' : 'maximum';
+  }
+
+  get adventureStateS()
+  {
+    return this.changeAdventureTextS ? 'none' : 'maximum';
+  }
+
+  // All the states for the 'developer' word on home page
+  get developerStateD()
+  {
+    return this.changeDeveloperTextD ? 'none' : 'maximum';
+  }
+
+  get developerStateE1()
+  {
+    return this.changeDeveloperTextE1 ? 'none' : 'maximum';
+  }
+
+  get developerStateV()
+  {
+    return this.changeDeveloperTextV ? 'none' : 'maximum';
+  }
+
+  get developerStateE2()
+  {
+    return this.changeDeveloperTextE2 ? 'none' : 'maximum';
+  }
+
+  get developerStateL()
+  {
+    return this.changeDeveloperTextL ? 'none' : 'maximum';
+  }
+
+  get developerStateO()
+  {
+    return this.changeDeveloperTextO ? 'none' : 'maximum';
+  }
+
+  get developerStateP()
+  {
+    return this.changeDeveloperTextP ? 'none' : 'maximum';
+  }
+
+  get developerStateE3()
+  {
+    return this.changeDeveloperTextE3 ? 'none' : 'maximum';
+  }
+
+  get developerStateR()
+  {
+    return this.changeDeveloperTextR ? 'none' : 'maximum';
   }
 
   toggleAdventure()
   {
-    this.changeAdventureText = !this.changeAdventureText;
+    this.changeAdventureTextA = !this.changeAdventureTextA;
   }
 
 }

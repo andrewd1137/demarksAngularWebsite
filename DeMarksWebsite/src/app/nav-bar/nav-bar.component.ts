@@ -1,5 +1,6 @@
-import { animate, state, style, transition, trigger } from '@angular/animations';
+import { animate, state, style, transition, trigger, useAnimation } from '@angular/animations';
 import { AfterViewInit, Component } from '@angular/core';
+import { fadeInDown } from 'ng-animate';
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,29 +8,22 @@ import { AfterViewInit, Component } from '@angular/core';
   styleUrls: ['./nav-bar.component.css'],
   animations: [
     trigger('navBarTrigger', [
-        state('none, void', style({
-          opacity: 0,
-        })),
-        state('maximum', style({
-          opacity: 1
-        })),
-        transition('none => maximum', animate('2000ms'))
-    ]),
+      transition('* => *', useAnimation(fadeInDown, {
+        // Set the duration to 5seconds and delay to 2seconds
+        params: { timing: 1 }
+      }))
+    ])
   ] 
 })
 
-export class NavBarComponent implements AfterViewInit {
-  state:string = 'none';
+export class NavBarComponent {
+  state:boolean = false;
 
   constructor() { }
 
-  ngAfterViewInit(): void {
-    this.state = 'maximum';
-  }
-
   toggle()
   {
-    
+    this.state = !this.state;
   }
 
 }

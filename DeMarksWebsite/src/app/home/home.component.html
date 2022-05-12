@@ -1,12 +1,69 @@
 <div class="home-container">
-    <div [@transitionLeftState]="transition" class="home-box"><img class="home-img" src="../assets/images/grandCanyon.jpg" alt="Picture of me freefalling"></div>
-    <div [@transitionRightState]="transition" [@popOverState]="adventureState" class="home-box home-box-fill" (mouseover)="changeAdventureText=true" (mouseout)="changeAdventureText=false">
-        <span *ngIf="!changeAdventureText" class="box-main-text" style="color: white;">Adventurous</span>
-        <span *ngIf="changeAdventureText" class="box-sub-text">I enjoy trying new things and living out of my comfort zone!</span>
-    </div>
-    <div [@transitionLeftState]="transition" [@popOverState]="developerState" class="home-box home-box-fill" (mouseover)="changeDeveloperText=true" (mouseout)="changeDeveloperText=false">
-        <span *ngIf="!changeDeveloperText" class="box-main-text" style="color: white;">Developer</span>
-        <span *ngIf="changeDeveloperText" class="box-sub-text">Codes with Angular (TS), C#, Python, and JS.</span>
-    </div>
+    <div [@transitionLeftState]="transition" class="home-box"><img class="home-img" src="../assets/images/freefall.png"></div>
     <div [@transitionRightState]="transition" class="home-box home-box-fill"><img class="home-img" src="../assets/images/setup.png" alt="Picture of me freefalling"></div>
+    <div [@transitionLeftState]="transition" class="home-box home-box-fill">
+        <span [@rubberBandState]="adventureStateA" class="box-main-text" 
+            (mouseover)="changeAdventureTextA=true" (mouseout)="changeAdventureTextA=false" style="color: white;">A
+        </span>
+        <span [@rubberBandState]="adventureStateD" class="box-main-text" 
+            (mouseover)="changeAdventureTextD=true" (mouseout)="changeAdventureTextD=false" style="color: white;">d
+        </span>
+        <span [@rubberBandState]="adventureStateV" class="box-main-text" 
+            (mouseover)="changeAdventureTextV=true" (mouseout)="changeAdventureTextV=false" style="color: white;">v
+        </span>
+        <span [@rubberBandState]="adventureStateE" class="box-main-text" 
+            (mouseover)="changeAdventureTextE=true" (mouseout)="changeAdventureTextE=false" style="color: white;">e
+        </span>
+        <span [@rubberBandState]="adventureStateN" class="box-main-text" 
+            (mouseover)="changeAdventureTextN=true" (mouseout)="changeAdventureTextN=false" style="color: white;">n
+        </span>
+        <span [@rubberBandState]="adventureStateT" class="box-main-text" 
+            (mouseover)="changeAdventureTextT=true" (mouseout)="changeAdventureTextT=false" style="color: white;">t
+        </span>
+        <span [@rubberBandState]="adventureStateU1" class="box-main-text" 
+            (mouseover)="changeAdventureTextU1=true" (mouseout)="changeAdventureTextU1=false" style="color: white;">u
+        </span>
+        <span [@rubberBandState]="adventureStateR" class="box-main-text" 
+            (mouseover)="changeAdventureTextR=true" (mouseout)="changeAdventureTextR=false" style="color: white;">r
+        </span>
+        <span [@rubberBandState]="adventureStateO" class="box-main-text" 
+            (mouseover)="changeAdventureTextO=true" (mouseout)="changeAdventureTextO=false" style="color: white;">o
+        </span>
+        <span [@rubberBandState]="adventureStateU2" class="box-main-text" 
+            (mouseover)="changeAdventureTextU2=true" (mouseout)="changeAdventureTextU2=false" style="color: white;">u
+        </span>
+        <span [@rubberBandState]="adventureStateS" class="box-main-text" 
+            (mouseover)="changeAdventureTextS=true" (mouseout)="changeAdventureTextS=false" style="color: white;">s
+        </span>
+    </div>
+    <!-- --------------------------------------------Divider---------------------------------------------------- -->
+    <div [@transitionRightState]="transition" class="home-box home-box-fill">
+        <span [@jelloState]="developerStateD" class="box-main-text" 
+            (mouseover)="changeDeveloperTextD=true" (mouseout)="changeDeveloperTextD=false" style="color: white;">D
+        </span>
+        <span [@jelloState]="developerStateE1" class="box-main-text" 
+            (mouseover)="changeDeveloperTextE1=true" (mouseout)="changeDeveloperTextE1=false" style="color: white;">e
+        </span>
+        <span [@jelloState]="developerStateV" class="box-main-text" 
+            (mouseover)="changeDeveloperTextV=true" (mouseout)="changeDeveloperTextV=false" style="color: white;">v
+        </span>
+        <span [@jelloState]="developerStateE2" class="box-main-text" 
+            (mouseover)="changeDeveloperTextE2=true" (mouseout)="changeDeveloperTextE2=false" style="color: white;">e
+        </span>
+        <span [@jelloState]="developerStateL" class="box-main-text" 
+            (mouseover)="changeDeveloperTextL=true" (mouseout)="changeDeveloperTextL=false" style="color: white;">l
+        </span>
+        <span [@jelloState]="developerStateO" class="box-main-text" 
+            (mouseover)="changeDeveloperTextO=true" (mouseout)="changeDeveloperTextO=false" style="color: white;">o
+        </span>
+        <span [@jelloState]="developerStateP" class="box-main-text" 
+            (mouseover)="changeDeveloperTextP=true" (mouseout)="changeDeveloperTextP=false" style="color: white;">p
+        </span>
+        <span [@jelloState]="developerStateE3" class="box-main-text" 
+            (mouseover)="changeDeveloperTextE3=true" (mouseout)="changeDeveloperTextE3=false" style="color: white;">e
+        </span>
+        <span [@jelloState]="developerStateR" class="box-main-text" 
+            (mouseover)="changeDeveloperTextR=true" (mouseout)="changeDeveloperTextR=false" style="color: white;">r
+        </span>
+    </div>
 </div>
