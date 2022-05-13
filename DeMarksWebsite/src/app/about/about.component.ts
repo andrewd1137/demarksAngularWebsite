@@ -50,20 +50,20 @@ export class AboutComponent implements OnInit, AfterViewInit {
   alwaysLearningImg:string = "../assets/images/playingpiano.jpg";
   alwaysLearning:string = "Apart from being a software developer in an ever changing field, I also enjoy trying out new things. I recently " +
   "started bowling in late 2020. I play piano and take weekly lessons. My progress each year is shown on my youtube channel " + 
-  "(which you can find in the navigation bar above). I also started learning how to scuba dive in 2021 and plan to finish my open water " +
+  "(which you can find in the navigation bar above). I started learning how to scuba dive in 2021 and plan to finish my open water " +
   "certification in the summer of 2022. I also plan to one day learn how to skydive, how to drive a manual car, and how to fly a plane.";
 
   travelingImg:string = "../assets/images/grandCanyon.jpg";
   traveling:string = "I love to travel. I hope to one day visit: Thailand, Australia, Japan, Italy, and Hawaii. The most exciting place I Have " +
-  "been to in the past 5 years was Sedona, Arizona. It is a beautiful place. They call the whole area a museum with a price tag. There are a " +
+  "been to in the past 5 years was Sedona, Arizona. They call the whole area a museum with a price tag. There are a " +
   "ton of stores you can go to find cool artwork. My favorite things I got to do there were: find and hold a tarantula " +
   "(you read that right), visit the Grand Canyon, go horseback riding, go on a Pink Jeep Tour, and hike. I have a video of my trip on my youtube " +
   "channel!";
 
   lifeGoalImg:string = "../assets/images/astronautguy.jpg";
   lifeGoal:string = "If you don't know me, my life goal is to be an Astronaut. I even have a huge astronaut tattooed on my thigh. " +
-  "The coolest thing to me would to be able to go to space one day. Ever since I did a NASA after school activity in elementary school, " + 
-  "I always loved the idea of going to space. I actually made use of NASA's Open APIs "; 
+  "The coolest thing to me would be seeing humans living on Mars. " + 
+  "I actually made use of NASA's Open APIs "; 
 
   videoGamesImg:string = "../assets/images/littlegamer.jpg"
   videoGames:string = "Have been playing them since I was little. " + 
@@ -142,6 +142,4 @@ export class AboutComponent implements OnInit, AfterViewInit {
       }
     }
   }
-
-
 }

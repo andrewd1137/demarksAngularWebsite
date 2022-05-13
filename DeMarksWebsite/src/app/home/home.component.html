@@ -1,69 +1,110 @@
 <div class="home-container">
-    <div [@transitionLeftState]="transition" class="home-box"><img class="home-img" src="../assets/images/freefall.png"></div>
-    <div [@transitionRightState]="transition" class="home-box home-box-fill"><img class="home-img" src="../assets/images/setup.png"></div>
     <div [@transitionLeftState]="transition" class="home-box home-box-fill">
         <span [@rubberBandState]="adventureStateA" class="box-main-text" 
-            (mouseover)="changeAdventureTextA=true" (mouseout)="changeAdventureTextA=false" style="color: white;">A
+            (mouseover)="changeAdventureTextA=true" (mouseout)="changeAdventureTextA=false">A
         </span>
-        <span [@rubberBandState]="adventureStateD" class="box-main-text" 
-            (mouseover)="changeAdventureTextD=true" (mouseout)="changeAdventureTextD=false" style="color: white;">d
+        <span [@rubberBandState]="adventureStateD" class=" box-sub-text" 
+            (mouseover)="changeAdventureTextD=true" (mouseout)="changeAdventureTextD=false">d
         </span>
-        <span [@rubberBandState]="adventureStateV" class="box-main-text" 
-            (mouseover)="changeAdventureTextV=true" (mouseout)="changeAdventureTextV=false" style="color: white;">v
+        <span [@rubberBandState]="adventureStateV" class=" box-sub-text" 
+            (mouseover)="changeAdventureTextV=true" (mouseout)="changeAdventureTextV=false">v
         </span>
-        <span [@rubberBandState]="adventureStateE" class="box-main-text" 
-            (mouseover)="changeAdventureTextE=true" (mouseout)="changeAdventureTextE=false" style="color: white;">e
+        <span [@rubberBandState]="adventureStateE" class=" box-sub-text" 
+            (mouseover)="changeAdventureTextE=true" (mouseout)="changeAdventureTextE=false">e
         </span>
-        <span [@rubberBandState]="adventureStateN" class="box-main-text" 
-            (mouseover)="changeAdventureTextN=true" (mouseout)="changeAdventureTextN=false" style="color: white;">n
+        <span [@rubberBandState]="adventureStateN" class=" box-sub-text" 
+            (mouseover)="changeAdventureTextN=true" (mouseout)="changeAdventureTextN=false">n
         </span>
-        <span [@rubberBandState]="adventureStateT" class="box-main-text" 
-            (mouseover)="changeAdventureTextT=true" (mouseout)="changeAdventureTextT=false" style="color: white;">t
+        <span [@rubberBandState]="adventureStateT" class=" box-sub-text" 
+            (mouseover)="changeAdventureTextT=true" (mouseout)="changeAdventureTextT=false">t
         </span>
-        <span [@rubberBandState]="adventureStateU1" class="box-main-text" 
-            (mouseover)="changeAdventureTextU1=true" (mouseout)="changeAdventureTextU1=false" style="color: white;">u
+        <span [@rubberBandState]="adventureStateU1" class=" box-sub-text" 
+            (mouseover)="changeAdventureTextU1=true" (mouseout)="changeAdventureTextU1=false">u
         </span>
-        <span [@rubberBandState]="adventureStateR" class="box-main-text" 
-            (mouseover)="changeAdventureTextR=true" (mouseout)="changeAdventureTextR=false" style="color: white;">r
+        <span [@rubberBandState]="adventureStateR" class=" box-sub-text" 
+            (mouseover)="changeAdventureTextR=true" (mouseout)="changeAdventureTextR=false">r
         </span>
-        <span [@rubberBandState]="adventureStateO" class="box-main-text" 
-            (mouseover)="changeAdventureTextO=true" (mouseout)="changeAdventureTextO=false" style="color: white;">o
+        <span [@rubberBandState]="adventureStateO" class=" box-sub-text" 
+            (mouseover)="changeAdventureTextO=true" (mouseout)="changeAdventureTextO=false">o
         </span>
-        <span [@rubberBandState]="adventureStateU2" class="box-main-text" 
-            (mouseover)="changeAdventureTextU2=true" (mouseout)="changeAdventureTextU2=false" style="color: white;">u
+        <span [@rubberBandState]="adventureStateU2" class=" box-sub-text" 
+            (mouseover)="changeAdventureTextU2=true" (mouseout)="changeAdventureTextU2=false">u
         </span>
-        <span [@rubberBandState]="adventureStateS" class="box-main-text" 
-            (mouseover)="changeAdventureTextS=true" (mouseout)="changeAdventureTextS=false" style="color: white;">s
+        <span [@rubberBandState]="adventureStateS" class=" box-sub-text" 
+            (mouseover)="changeAdventureTextS=true" (mouseout)="changeAdventureTextS=false">s
         </span>
     </div>
     <!-- --------------------------------------------Divider---------------------------------------------------- -->
     <div [@transitionRightState]="transition" class="home-box home-box-fill">
         <span [@tadaState]="developerStateD" class="box-main-text" 
-            (mouseover)="changeDeveloperTextD=true" (mouseout)="changeDeveloperTextD=false" style="color: white;">D
+            (mouseover)="changeDeveloperTextD=true" (mouseout)="changeDeveloperTextD=false">D
         </span>
-        <span [@tadaState]="developerStateE1" class="box-main-text" 
-            (mouseover)="changeDeveloperTextE1=true" (mouseout)="changeDeveloperTextE1=false" style="color: white;">e
+        <span [@tadaState]="developerStateE1" class=" box-sub-text" 
+            (mouseover)="changeDeveloperTextE1=true" (mouseout)="changeDeveloperTextE1=false">e
         </span>
-        <span [@tadaState]="developerStateV" class="box-main-text" 
-            (mouseover)="changeDeveloperTextV=true" (mouseout)="changeDeveloperTextV=false" style="color: white;">v
+        <span [@tadaState]="developerStateV" class=" box-sub-text" 
+            (mouseover)="changeDeveloperTextV=true" (mouseout)="changeDeveloperTextV=false">v
         </span>
-        <span [@tadaState]="developerStateE2" class="box-main-text" 
-            (mouseover)="changeDeveloperTextE2=true" (mouseout)="changeDeveloperTextE2=false" style="color: white;">e
+        <span [@tadaState]="developerStateE2" class=" box-sub-text" 
+            (mouseover)="changeDeveloperTextE2=true" (mouseout)="changeDeveloperTextE2=false">e
         </span>
-        <span [@tadaState]="developerStateL" class="box-main-text" 
-            (mouseover)="changeDeveloperTextL=true" (mouseout)="changeDeveloperTextL=false" style="color: white;">l
+        <span [@tadaState]="developerStateL" class=" box-sub-text" 
+            (mouseover)="changeDeveloperTextL=true" (mouseout)="changeDeveloperTextL=false">l
         </span>
-        <span [@tadaState]="developerStateO" class="box-main-text" 
-            (mouseover)="changeDeveloperTextO=true" (mouseout)="changeDeveloperTextO=false" style="color: white;">o
+        <span [@tadaState]="developerStateO" class=" box-sub-text" 
+            (mouseover)="changeDeveloperTextO=true" (mouseout)="changeDeveloperTextO=false">o
         </span>
-        <span [@tadaState]="developerStateP" class="box-main-text" 
-            (mouseover)="changeDeveloperTextP=true" (mouseout)="changeDeveloperTextP=false" style="color: white;">p
+        <span [@tadaState]="developerStateP" class=" box-sub-text" 
+            (mouseover)="changeDeveloperTextP=true" (mouseout)="changeDeveloperTextP=false">p
         </span>
-        <span [@tadaState]="developerStateE3" class="box-main-text" 
-            (mouseover)="changeDeveloperTextE3=true" (mouseout)="changeDeveloperTextE3=false" style="color: white;">e
+        <span [@tadaState]="developerStateE3" class=" box-sub-text" 
+            (mouseover)="changeDeveloperTextE3=true" (mouseout)="changeDeveloperTextE3=false">e
         </span>
-        <span [@tadaState]="developerStateR" class="box-main-text" 
-            (mouseover)="changeDeveloperTextR=true" (mouseout)="changeDeveloperTextR=false" style="color: white;">r
+        <span [@tadaState]="developerStateR" class=" box-sub-text" 
+            (mouseover)="changeDeveloperTextR=true" (mouseout)="changeDeveloperTextR=false">r
         </span>
+    </div>
+    <div [@transitionLeftState]="transition" class="home-box"><img class="home-img" src="../assets/images/freefall.png"></div>
+    <div [@transitionRightState]="transition" class="home-box"><img class="home-img" src="../assets/images/setup.png"></div>
+</div>
+    
+<div [@fadeInState]="fadeIn">
+    <h3 class="projects-heading">Personal Favorite Projects</h3>
+    <div class="card-group projects-container">
+        <div class="card projects-margin">
+            <a class="projects-link" href="https://github.com/andrewd1137/WebCalculatorApp" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/images/calcProject.png" width="100%">
+            </a>
+            <div class="card-body">
+            <h5 class="card-title title-center">Simple Caculator</h5>
+            <p class="card-text">This is a calculator website app that uses HTML, CSS and JS. It allows you to do the 4 basic operations with 
+                +/- integers or decimals. You can also backspace if you make a typo and clear the calculator.</p>
+            </div>
+        </div>
+        <div class="card projects-margin">
+            <a class="projects-link" href="https://github.com/andrewd1137/My-2-Cents-UI" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/images/my2cents.png" width="100%">
+            </a>
+          <div class="card-body">
+            <h5 class="card-title">My 2 Cents Banking/Investing</h5>
+            <p class="card-text">As a team of about 20 members, we added features and functionalities
+                to this existing banking application in order to allow users to help budget their money and invest in crypto/stocks.
+                The project is written in C# for the backend web api and the front end uses Angular. 
+            </p>
+          </div>
+        </div>
+        <div class="card projects-margin">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mars Rover Photos (using one of NASAs APIs)</h5>
+            <p class="card-text">This is a small project I made using one of NASAs Web APIs 
+                (<a href="https://api.nasa.gov/" target="_blank" rel="noopener noreferrer">api.nasa.gov</a>).
+                I used the Mar's Rover Photos API to get images from different SOL days (just a fancy term for 
+                a day on mars/one full martian rotation). The page originally shows information for a random SOL day
+                and you can click either the "Get Random SOl" button or type in a specific SOL day to see the information and images from that day.
+                Some of the information includes photos, the sol day, the earth date, the camera used, and the rover name.
+            </p>
+          </div>
+        </div>
     </div>
 </div>

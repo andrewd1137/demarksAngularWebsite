@@ -1,6 +1,6 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { transition, trigger, useAnimation } from '@angular/animations';
-import { bounceInLeft, bounceInRight, rubberBand, tada } from 'ng-animate';
+import { bounceInLeft, bounceInRight, fadeIn, fadeInUp, rubberBand, tada } from 'ng-animate';
 
 @Component({
   selector: 'app-home',
@@ -30,11 +30,19 @@ import { bounceInLeft, bounceInRight, rubberBand, tada } from 'ng-animate';
         // Set the duration to 5seconds and delay to 2seconds
         params: { timing: 5 }
       }))
+    ]),
+    trigger('fadeInState', [
+      transition('void => *', useAnimation(fadeIn, {
+        // Set the duration to 5seconds and delay to 2seconds
+        params: { timing: 1 }
+      }))
     ])
   ] 
 })
 export class HomeComponent implements AfterViewInit{
   transition:string = 'none';
+  fadeIn:string = 'none';
+  currentAdventureState:string = '[@tadaState]';
 
   //Booleans for Adventure sate
   changeAdventureTextA:boolean = false; //A
