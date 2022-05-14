@@ -104,3 +104,8 @@
 {
     opacity: 50%;
 }
+
+.projects-img-border
+{
+    border: 1px solid gray;
+}
