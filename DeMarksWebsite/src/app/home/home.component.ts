@@ -42,7 +42,6 @@ import { bounceInLeft, bounceInRight, fadeIn, fadeInUp, rubberBand, tada } from 
 export class HomeComponent implements AfterViewInit{
   transition:string = 'none';
   fadeIn:string = 'none';
-  currentAdventureState:string = '[@tadaState]';
 
   //Booleans for Adventure sate
   changeAdventureTextA:boolean = false; //A
@@ -175,11 +174,6 @@ export class HomeComponent implements AfterViewInit{
   get developerStateR()
   {
     return this.changeDeveloperTextR ? 'none' : 'maximum';
-  }
-
-  toggleAdventure()
-  {
-    this.changeAdventureTextA = !this.changeAdventureTextA;
   }
 
 }

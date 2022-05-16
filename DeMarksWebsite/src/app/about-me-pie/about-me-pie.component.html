@@ -1,0 +1,49 @@
+<div class="component-container">
+  <div [@flipState]="transition">
+    <h1 class="pie-main-heading">My Life, Divided.</h1>
+  </div>
+  <div class="container pie-container">
+    <div class="row">
+      <div [@fadeInLeft]="transition" class="col">
+        <h1 class="pie-side-heading">Adventurer</h1>
+        <h6 class="pie-side-text">Traveling</h6>
+        <h6 class="pie-side-text">Scuba Diving</h6>
+        <h6 class="pie-side-text">Sky Diving</h6>
+        <h6 class="pie-side-text">Paintball</h6>
+        <h6 class="pie-side-text">Tattoo Lover</h6> 
+      </div>
+      <div class="col">
+        <div class="row">
+          <div>
+            <div>
+              <div class="chart" style="width: 100%;">
+                <canvas baseChart
+                [data]="pieChartData"
+                [type]="pieChartType"
+                [options]="pieChartOptions">
+                </canvas>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div [@fadeInUp]="transition" class="col">
+            <h1 class="pie-center-heading">Gamer</h1>
+            <h6 class="pie-center-text">League of Legends</h6>
+            <h6 class="pie-center-text">Black Ops Zombies</h6>
+            <h6 class="pie-center-text">Party Games</h6> 
+            <h6 class="pie-center-text">FPS Games</h6>
+            <h6 class="pie-center-text">Minecraft</h6>
+          </div>
+        </div>
+      <div [@fadeInRight]="transition" class="col">
+        <h1 class="pie-side-heading">Developer</h1>
+        <h6 class="pie-side-text">Full-stack Development</h6>
+        <h6 class="pie-side-text">Angular (HTML, CSS, TS)</h6>
+        <h6 class="pie-side-text">C#</h6>
+        <h6 class="pie-side-text">Python</h6>
+        <h6 class="pie-side-text">SQL</h6> 
+      </div>
+    </div>
+  </div>
+</div>
+

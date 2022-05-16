@@ -14,6 +14,9 @@ import { RouterModule } from '@angular/router';
 import { NotFoundError } from 'rxjs';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
+import { NgChartsModule } from 'ng2-charts';
+import { AboutMePieComponent } from './about-me-pie/about-me-pie.component';
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,7 @@ import { FooterComponent } from './footer/footer.component';
     EducationComponent,
     PortfolioComponent,
     FooterComponent,
+    AboutMePieComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +42,9 @@ import { FooterComponent } from './footer/footer.component';
       //TODO: Make the * path direct them to a 404 not found page, rather than an error
       {path: "*", component:NotFoundError},
     ]),
-    NgbModule
+    NgbModule,
+    NgChartsModule,
+    AnimateOnScrollModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

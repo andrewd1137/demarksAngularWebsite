@@ -1,3 +1,4 @@
+<!-- TODO: This page needs to be made responsive -->
 <div class="about-me-container">
   <div [@slideInLeft]="transition" class="about-me-box">
     <h2 class="about-me-heading">
@@ -13,7 +14,6 @@
     <img [src]="headingImage" class="img-thumbnail about-img-heading">
   </div>
 </div>
-
 <div class="flex-container">
   <div *ngIf="!active1" class="flexbox-item">
     <img [@flipInState]="transition" [src]="aboutMeImg" class="img-thumbnail about-img" (click)="showText(1)">        
@@ -31,4 +31,41 @@
     <img [@flipInState]="transition" [src]="videoGamesImg" class="img-thumbnail about-img" (click)="showText(5)"> 
   </div>
 </div>
-<app-footer></app-footer>
+<hr style="margin-bottom: 2rem; height: 0.25rem;">
+<app-about-me-pie></app-about-me-pie>
+<hr style="margin-bottom: 2rem; height: 0.25rem;">
+<div [@fadeInState]="fadeIn">
+  <div class="fun-facts-container">
+    <div class="about-me-box">
+      <div class="container">
+        <div class="row">
+          <h2 class="fun-facts-heading">Fun Facts</h2>
+        </div>
+        <div>
+          <div class="row">
+            <h6 class="bullet-items">• I have 4 tattoos</h6>
+          </div>
+          <div class="row">
+            <h6 class="bullet-items">• My favorite snack is popcorn</h6>
+          </div>
+          <div class="row">
+            <h6 class="bullet-items">• I like spiders</h6>
+          </div>
+          <div class="row">
+            <h6 class="bullet-items">• I don't have any pets</h6>
+          </div>
+          <div class="row">
+            <h6 class="bullet-items">• I like going for runs</h6>
+          </div>
+          <div class="row">
+            <h6 class="bullet-items">• I can ice skate</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-me-box">
+      <img src="../assets/images/freefall.png" class="img-thumbnail about-img-heading">
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

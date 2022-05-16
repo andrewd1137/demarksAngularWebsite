@@ -1,6 +1,6 @@
 import { transition, trigger, useAnimation } from '@angular/animations';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { flipInX, slideInLeft, slideInRight } from 'ng-animate';
+import { fadeIn, flipInX, rubberBand, slideInLeft, slideInRight } from 'ng-animate';
 
 @Component({
   selector: 'app-about',
@@ -25,17 +25,24 @@ import { flipInX, slideInLeft, slideInRight } from 'ng-animate';
         params: { timing: 1 }
       }))
     ]),
+    trigger('fadeInState', [
+      transition('* => *', useAnimation(fadeIn, {
+        // Set the duration to 5seconds and delay to 2seconds
+        params: { timing: 1 }
+      }))
+    ])
   ] 
 })
 
 export class AboutComponent implements OnInit, AfterViewInit {
   transition:boolean = false;
+  fadeIn:string = 'none';
 
-  active1 = false;
-  active2 = false;
-  active3 = false;
-  active4 = false;
-  active5 = false;
+  active1:boolean = false;
+  active2:boolean = false;
+  active3:boolean = false;
+  active4:boolean = false;
+  active5:boolean = false;
 
   displayText:string = "";
   aboutMeTitle:string = "";
@@ -74,6 +81,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
   constructor() { }
   ngAfterViewInit(): void {
     this.transition = true;
+    this.fadeIn = 'maximum';
   }
   ngOnInit(): void 
   {

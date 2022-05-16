@@ -27,6 +27,7 @@
     display: flex;
     justify-content: space-around;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .flexbox-item
@@ -71,4 +72,29 @@
     font-weight: normal;
     text-align: left;
     font-size: 2rem;
+}
+
+.fun-facts-heading
+{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.fun-facts-container
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color:#fff;
+    display:grid;
+    grid-template-columns: 20% 45%;
+    overflow-x: hidden;
+}
+
+.bullet-items
+{
+    font-size: 1.5rem;
+    text-align: left;
 }
