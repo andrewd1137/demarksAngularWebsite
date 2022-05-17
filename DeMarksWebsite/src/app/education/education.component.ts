@@ -1,15 +1,29 @@
-import { Component, OnInit } from '@angular/core';
+import { transition, trigger, useAnimation } from '@angular/animations';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { fadeIn } from 'ng-animate';
 
 @Component({
   selector: 'app-education',
   templateUrl: './education.component.html',
-  styleUrls: ['./education.component.css']
+  styleUrls: ['./education.component.css'],
+  animations: [
+    trigger('fadeInState', [
+      transition('void => *', useAnimation(fadeIn, {
+        // Set the duration to 5seconds and delay to 2seconds
+        params: { timing: 1 }
+      }))
+    ])
+  ]
 })
-export class EducationComponent implements OnInit {
+export class EducationComponent implements AfterViewInit {
+  transition:string = 'none';
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
+    this.transition = 'none';
   }
+
+
 
 }
