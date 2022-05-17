@@ -75,7 +75,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
   videoGamesImg:string = "../assets/images/littlegamer.jpg"
   videoGames:string = "Have been playing them since I was little. " + 
   "Some of my favorite games of all time include: Super Monkey Ball (1 & 2), Mariokart, Super Smash Bros (Melee & Ultimate), " +
-  "Call of Duty (from WaW -> BO3), Battlefield (3 & 4), League of legends, Coutner Strike Global Offensive, and Minecraft. I also " +
+  "Call of Duty (from WaW -> BO3), Battlefield (3 & 4), League of legends, Counter Strike Global Offensive, and Minecraft. I also " +
   "used to play a lot of battle royal games and I always enjoy a fun party game.";
 
   constructor() { }
