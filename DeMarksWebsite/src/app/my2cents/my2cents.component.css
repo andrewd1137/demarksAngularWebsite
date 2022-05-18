@@ -9,13 +9,38 @@
 {
     text-align: center;
     text-decoration: none;
-    background-color: black;
+    background-color: gray;
     color: white;
     width: 50%;
     font-size: 2rem;
     display: block;
     margin: auto;
     border-radius: 1rem;
+}
+
+.github-button
+{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button-text
+{
+    margin: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: gray;
+    color: white;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+.button-text:hover
+{
+    opacity: 50%;
 }
 
 .back-button:hover

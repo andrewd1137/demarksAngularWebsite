@@ -1,6 +1,12 @@
-<div [@fadeInState]="transition" style="overflow-x: hidden; margin-top: 2rem;">
+<div [@fadeInState]="transition" style="overflow-x: hidden;">
     <div class="row">
-        <a class="back-button" routerLink="/portfolio">Back to Portfolio</a>
+        <div class="github-button">
+            <a class="button-text" routerLink="/portfolio"><span class="material-icons">
+                arrow_back
+                </span> Back to Portfolio</a>
+            <a class="button-text" href="https://github.com/andrewd1137/My-2-Cents-API" target="_blank" rel="noopener noreferrer">Backend Web API on GitHub</a>
+            <a class="button-text" href="https://github.com/andrewd1137/My-2-Cents-UI" target="_blank" rel="noopener noreferrer">Front End UI on GitHub</a>
+        </div>
         <h1 class="education-container main-headings">
             My 2 Cents Banking/Investment
         </h1>
