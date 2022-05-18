@@ -1,0 +1,31 @@
+.main-headings
+{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.back-button
+{
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    width: 50%;
+    font-size: 2rem;
+    display: block;
+    margin: auto;
+    border-radius: 1rem;
+}
+
+.back-button:hover
+{
+    opacity: 50%;
+}
+
+.education-container
+{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -48,31 +48,31 @@ export class AboutComponent implements OnInit, AfterViewInit {
   aboutMeTitle:string = "";
   headingImage:string = "";
 
-  aboutMeImg:string = "../assets/images/holyland.jpg";
+  aboutMeImg:string = "../assets/images/homeandabout/holyland.jpg";
   aboutMe:string = "I am a software developer that currently lives on the East Coast of the US. Technology facinates me and I really enjoy web development. " +
   "I find myself as more of a front end kinda guy (which shouldn't be much of a surprise with this website). When I'm " +
   "not banging my head against my desk debugging...I mean coding, I'm usually either at that same desk playing video games, playing piano, bowling, or " +
   "on the occasional adventure.";
 
-  alwaysLearningImg:string = "../assets/images/playingpiano.jpg";
+  alwaysLearningImg:string = "../assets/images/homeandabout/playingpiano.jpg";
   alwaysLearning:string = "Apart from being a software developer in an ever changing field, I also enjoy trying out new things. I recently " +
   "started bowling in late 2020. I play piano and take weekly lessons. My progress each year is shown on my youtube channel " + 
   "(which you can find in the navigation bar above). I started learning how to scuba dive in 2021 and plan to finish my open water " +
   "certification in the summer of 2022. I also plan to one day learn how to skydive, how to drive a manual car, and how to fly a plane.";
 
-  travelingImg:string = "../assets/images/grandCanyon.jpg";
+  travelingImg:string = "../assets/images/homeandabout/grandCanyon.jpg";
   traveling:string = "I love to travel. I hope to one day visit: Thailand, Australia, Japan, Italy, and Hawaii. The most exciting place I Have " +
   "been to in the past 5 years was Sedona, Arizona. They call the whole area a museum with a price tag. There are a " +
   "ton of stores you can go to find cool artwork. My favorite things I got to do there were: find and hold a tarantula " +
   "(you read that right), visit the Grand Canyon, go horseback riding, go on a Pink Jeep Tour, and hike. I have a video of my trip on my youtube " +
   "channel!";
 
-  lifeGoalImg:string = "../assets/images/astronautguy.jpg";
+  lifeGoalImg:string = "../assets/images/homeandabout/astronautguy.jpg";
   lifeGoal:string = "If you don't know me, my life goal is to be an Astronaut. I even have a huge astronaut tattooed on my thigh. " +
   "The coolest thing to me would be seeing humans living on Mars. " + 
   "I actually made use of NASA's Open APIs "; 
 
-  videoGamesImg:string = "../assets/images/littlegamer.jpg"
+  videoGamesImg:string = "../assets/images/homeandabout/littlegamer.jpg"
   videoGames:string = "Have been playing them since I was little. " + 
   "Some of my favorite games of all time include: Super Monkey Ball (1 & 2), Mariokart, Super Smash Bros (Melee & Ultimate), " +
   "Call of Duty (from WaW -> BO3), Battlefield (3 & 4), League of legends, Counter Strike Global Offensive, and Minecraft. I also " +

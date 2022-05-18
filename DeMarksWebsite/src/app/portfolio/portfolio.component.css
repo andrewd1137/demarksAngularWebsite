@@ -1,0 +1,21 @@
+.projects-container
+{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.projects-heading
+{
+    text-align: center;
+}
+
+.projects-link:hover
+{
+    opacity: 50%;
+}
+
+.projects-img-border
+{
+    border: 1px solid gray;
+}

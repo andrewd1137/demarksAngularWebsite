@@ -1,11 +1,11 @@
 import { transition, trigger, useAnimation } from '@angular/animations';
-import { AfterViewInit, Component } from '@angular/core';
-import { fadeIn } from 'ng-animate';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { fadeIn, zoomIn } from 'ng-animate';
 
 @Component({
-  selector: 'app-education',
-  templateUrl: './education.component.html',
-  styleUrls: ['./education.component.css'],
+  selector: 'app-my2cents',
+  templateUrl: './my2cents.component.html',
+  styleUrls: ['./my2cents.component.css'],
   animations: [
     trigger('fadeInState', [
       transition('void => *', useAnimation(fadeIn, {
@@ -15,7 +15,7 @@ import { fadeIn } from 'ng-animate';
     ])
   ]
 })
-export class EducationComponent implements AfterViewInit {
+export class My2centsComponent implements AfterViewInit {
   transition:string = 'none';
 
   constructor() { }
