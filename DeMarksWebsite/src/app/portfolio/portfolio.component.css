@@ -1,21 +1,26 @@
-.projects-container
+.margin-container
 {
     margin-top: 2rem;
+}
+
+.projects-container
+{
     margin-left: 2rem;
     margin-right: 2rem;
 }
 
+.project-border
+{
+    border: 0.25rem solid black;
+}
+
 .projects-heading
 {
+    background-color: lightgray;
     text-align: center;
 }
 
 .projects-link:hover
 {
     opacity: 50%;
-}
-
-.projects-img-border
-{
-    border: 1px solid gray;
 }
