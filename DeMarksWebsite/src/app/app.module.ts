@@ -18,6 +18,7 @@ import { NgChartsModule } from 'ng2-charts';
 import { AboutMePieComponent } from './about-me-pie/about-me-pie.component';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { My2centsComponent } from './my2cents/my2cents.component';
+import { SimpleCalcProjectComponent } from './simple-calc-project/simple-calc-project.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { My2centsComponent } from './my2cents/my2cents.component';
     FooterComponent,
     AboutMePieComponent,
     My2centsComponent,
+    SimpleCalcProjectComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,6 +44,7 @@ import { My2centsComponent } from './my2cents/my2cents.component';
       {path: "education", component:EducationComponent},
       {path: "portfolio", component:PortfolioComponent},
       {path: "my2cents", component:My2centsComponent},
+      {path: "calculator", component: SimpleCalcProjectComponent},
       //TODO: Make the * path direct them to a 404 not found page, rather than an error
       {path: "*", component:NotFoundError},
     ]),

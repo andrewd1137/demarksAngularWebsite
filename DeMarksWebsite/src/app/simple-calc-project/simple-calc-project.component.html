@@ -1,0 +1,93 @@
+<div [@fadeInState]="transition" style="overflow-x: hidden;">
+    <div class="row">
+        <div class="github-button">
+            <a class="button-text" routerLink="/portfolio"><span class="material-icons">
+                arrow_back
+                </span> Back to Portfolio</a>
+            <a class="button-text" href="https://github.com/andrewd1137/WebCalculatorApp" target="_blank" rel="noopener noreferrer">Check it out on GitHub!</a>
+        </div>
+        <h1 class="education-container main-headings">
+            HTML, CSS, & JavaScript Calculator
+        </h1>
+    </div>
+    <div class="education-container">
+        <div class="card" style="width: 50%; border: none;">
+            <div class="row">
+              <div class="col">
+                <h3 style="text-align: center;">Test me out. I work!</h3>
+                <div style="height: 300px; width: 450px;">
+                    <div class="columnAligned">
+                        <div class="textContainer">
+                            <h1 id="screenText" class="screenText">0</h1>
+                        </div>
+                        <div class="buttonsContainers">
+                            <button id="clear" class="nonNumbers calc-buttons" onclick="clearCalc()">AC</button>
+                            <button id="plusOrMinus" class="nonNumbers calc-buttons" onclick="posNegFunction()">+/-</button>
+                            <button id="delete" class="nonNumbers calc-buttons" onclick="backspaceFunction()">⌫</button>
+                            <button id="division" class="operations calc-buttons" onclick="divisionFunction()">÷</button>
+                        </div>
+                        <div class="buttonsContainers">
+                            <button id="7" class="numbers calc-buttons" onclick="numberButtonClicked(7)">7</button>
+                            <button id="8" class="numbers calc-buttons" onclick="numberButtonClicked(8)">8</button>
+                            <button id="9" class="numbers calc-buttons" onclick="numberButtonClicked(9)">9</button>
+                            <button id="multiply" class="operations calc-buttons" onclick="multiplicationFunction()">x</button>
+                        </div>
+                        <div class="buttonsContainers">
+                            <button id="4" class="numbers calc-buttons" onclick="numberButtonClicked(4)">4</button>
+                            <button id="5" class="numbers calc-buttons" onclick="numberButtonClicked(5)">5</button>
+                            <button id="6" class="numbers calc-buttons" onclick="numberButtonClicked(6)">6</button>
+                            <button id="subtract" class="operations calc-buttons" onclick="subtractionFunction()">-</button>
+                        </div>
+                        <div class="buttonsContainers">
+                            <button id="1" class="numbers calc-buttons" onclick="numberButtonClicked(1)">1</button>
+                            <button id="2" class="numbers calc-buttons" onclick="numberButtonClicked(2)">2</button>
+                            <button id="3" class="numbers calc-buttons" onclick="numberButtonClicked(3)">3</button>
+                            <button id="add" class="operations calc-buttons" onclick="additionFunction()">+</button>
+                        </div>
+                        <div class="buttonsContainers">
+                            <button id="0" class="zero calc-buttons" onclick="numberButtonClicked(0)">0</button>
+                            <button id="decimal" class="numbers calc-buttons" onclick="decimalButtonClicked('.')">.</button>
+                            <button id="equals" class="operations calc-buttons" onclick="equalsFunction()">=</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card-body">
+                    <h1 class="card-title">About</h1>
+                    <p class="card-text">
+                        This is a calculator app that allows you to do the 4 basic operations with +/- 
+                        integers or decimals. You can also backspace if you make a typo and clear the calculator. The app has some
+                        security features to make sure it runs as intended. Some of these include not being able to put multiple 0s
+                        infront of a number unless it's a decimal and allowing users to keep pressing operation buttons with numbers
+                        to do the operation without needing to hit ='s every time (Let's you do 2+2+2+2= and will show 8).
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <hr class="hr-breaker">
+    <div class="education-container">
+        <div class="card" style="width: 50%; border: none;">
+            <div class="row">
+                <div class="col">
+                    <img src="../assets/images/projects/simplecalcproj/technologies.png" style="display: block; margin: auto;" class="img-fluid center-block">
+                </div>
+                <div class="col">
+                    <div class="card-body">
+                        <h1 class="card-title">Technologies</h1>
+                        <p class="card-text">
+                            This app was made using HTML, CSS, and JavaScript. I used the HTMLScriptElement that Angular has
+                            to add the scipt file to this HTML Doc. The HTML and CSS from the project were just copied and pasted onto
+                            this page in order to display them.
+                        </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <div style="margin-top: 3rem;">
+        <app-footer></app-footer>
+    </div>
+</div>
