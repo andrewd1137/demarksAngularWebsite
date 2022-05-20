@@ -21,6 +21,8 @@ import { My2centsComponent } from './my2cents/my2cents.component';
 import { SimpleCalcProjectComponent } from './simple-calc-project/simple-calc-project.component';
 import { MarsApiProjComponent } from './mars-api-proj/mars-api-proj.component';
 import { PaintballStoreProjComponent } from './paintball-store-proj/paintball-store-proj.component';
+import { TicTacToeProjComponent } from './tic-tac-toe-proj/tic-tac-toe-proj.component';
+import { LinkedListQueueComponent } from './linked-list-queue/linked-list-queue.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { PaintballStoreProjComponent } from './paintball-store-proj/paintball-st
     SimpleCalcProjectComponent,
     MarsApiProjComponent,
     PaintballStoreProjComponent,
+    TicTacToeProjComponent,
+    LinkedListQueueComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,6 +55,8 @@ import { PaintballStoreProjComponent } from './paintball-store-proj/paintball-st
       {path: "calculator", component:SimpleCalcProjectComponent},
       {path: "marsproj", component:MarsApiProjComponent},
       {path: "pbstoreproj", component:PaintballStoreProjComponent},
+      {path: "tictactoeproj", component:TicTacToeProjComponent},
+      {path: "linkedlistqueueproj", component:LinkedListQueueComponent},
       //TODO: Make the * path direct them to a 404 not found page, rather than an error
       {path: "*", component:NotFoundError},
     ]),

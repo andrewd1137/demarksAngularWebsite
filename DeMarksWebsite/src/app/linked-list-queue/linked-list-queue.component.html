@@ -1,0 +1,57 @@
+<div [@fadeInState]="transition" style="overflow-x: hidden;">
+    <div class="row">
+        <div class="github-button">
+            <a class="button-text" routerLink="/portfolio"><span class="material-icons">
+                arrow_back
+                </span> Back to Portfolio</a>
+            <a class="button-text" href="https://github.com/andrewd1137/Queue-With-Linked-List" target="_blank" rel="noopener noreferrer">View on GitHub!</a>
+        </div>
+        <h1 class="education-container main-headings">
+            Linked List Queue in C
+        </h1>
+    </div>
+    <div class="education-container">
+        <div class="card" style="width: 70%; border: none;">
+            <div class="row">
+              <div class="col">
+                <img src="../assets/images/projects/linkedlistqueueproj/linkedlistqueue.png" style="display: block; margin: auto;" class="img-fluid center-block">
+              </div>
+              <div class="col">
+                <div class="card-body">
+                    <h1 class="card-title">About</h1>
+                    <p class="card-text">
+                        This is a project I made back in college when learning about data structures. It is a simple queue for customers using a linked list.
+                        The project allows you to add customers and then print the list to see the customers in the queue. I guess I can also say I'm pretty
+                        efficient with Paint, since I made this handy little image to the left using it. 
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <hr class="hr-breaker">
+    <div class="education-container">
+        <div class="card" style="width: 50%; border: none;">
+            <div class="row">
+                <div class="col">
+                    <img src="../assets/images/projects/linkedlistqueueproj/language.png" style="display: block; margin: auto;" class="img-fluid center-block">
+                </div>
+                <div class="col">
+                    <div class="card-body">
+                        <h1 class="card-title">Language</h1>
+                        <p class="card-text">
+                            This program was written in C. I have a header file that defines my two functions. Those functions are to add the customers and
+                            to print the customer list. Since C is a very low level programming language, it means that I needed to make use of malloc
+                            in order to allocate memory for the program. Finally, in order to point to the next node in the list, I had to use pointers
+                            for the nodes in my data structure. The pointers allow us to point to the head, the next nodes, and the tail node to keep
+                            track of where every customer is in the queue.
+                        </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <div style="margin-top: 3rem;">
+        <app-footer></app-footer>
+    </div>
+</div>

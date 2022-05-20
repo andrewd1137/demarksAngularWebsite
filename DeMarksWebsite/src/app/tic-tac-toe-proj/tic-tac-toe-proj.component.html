@@ -1,0 +1,62 @@
+<div [@fadeInState]="transition" style="overflow-x: hidden;">
+    <div class="row">
+        <div class="github-button">
+            <a class="button-text" routerLink="/portfolio"><span class="material-icons">
+                arrow_back
+                </span> Back to Portfolio</a>
+            <a class="button-text" href="https://github.com/andrewd1137/TicTacToeAIWebApp" target="_blank" rel="noopener noreferrer">View on GitHub!</a>
+        </div>
+        <h1 class="education-container main-headings">
+            Tic Tac Toe AI Tournament
+        </h1>
+    </div>
+    <div class="education-container">
+        <div class="card" style="width: 70%; border: none;">
+            <div class="row">
+              <div class="col">
+                <video style="width: 676px;" controls>
+                    <source src="../assets/tictactoeproj/tictactoedemo.mp4"
+                            type="video/mp4">
+                    Error loading Video or your browser might not support this type of video file.
+                </video>
+              </div>
+              <div class="col">
+                <div class="card-body">
+                    <h1 class="card-title">About</h1>
+                    <p class="card-text">
+                        This project takes 15 agents in a tournament setting. The agents have different levels of intelligence. The different levels include:
+                        next square (which chooses their move based on the next available square from top-left->bottom-right), blind random (which chooses a random
+                        square and goes there if available, if not it will continue until it finds an available square), probability based agents which have a % chance
+                        of making an optimal move or it will make either a random move or the next possible square. The final AI is a Minimax agent (Agent 0). This agent
+                        is the only agent with the Minimax intelligence, so it should always be the winner of the bracket because it always makes optimal moves. Watch the
+                        video to learn more as I go through the project in more depth and show a demo at the end. 
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <hr class="hr-breaker">
+    <div class="education-container">
+        <div class="card" style="width: 50%; border: none;">
+            <div class="row">
+                <div class="col">
+                    <img src="../assets/images/projects/simplecalcproj/technologies.png" style="display: block; margin: auto;" class="img-fluid center-block">
+                </div>
+                <div class="col">
+                    <div class="card-body">
+                        <h1 class="card-title">Technologies</h1>
+                        <p class="card-text">
+                            This app was made using HTML, CSS, and JavaScript. The original project was from a tutorial on youtube
+                            where it showcased a Tic-Tac-Toe game you could play with 1 player vs AI. I took out the code for the player
+                            and wrote my own code for some of the different AIs. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <div style="margin-top: 3rem;">
+        <app-footer></app-footer>
+    </div>
+</div>
