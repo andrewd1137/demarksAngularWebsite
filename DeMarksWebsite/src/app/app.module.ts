@@ -20,6 +20,7 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { My2centsComponent } from './my2cents/my2cents.component';
 import { SimpleCalcProjectComponent } from './simple-calc-project/simple-calc-project.component';
 import { MarsApiProjComponent } from './mars-api-proj/mars-api-proj.component';
+import { PaintballStoreProjComponent } from './paintball-store-proj/paintball-store-proj.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { MarsApiProjComponent } from './mars-api-proj/mars-api-proj.component';
     My2centsComponent,
     SimpleCalcProjectComponent,
     MarsApiProjComponent,
+    PaintballStoreProjComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,6 +50,7 @@ import { MarsApiProjComponent } from './mars-api-proj/mars-api-proj.component';
       {path: "my2cents", component:My2centsComponent},
       {path: "calculator", component:SimpleCalcProjectComponent},
       {path: "marsproj", component:MarsApiProjComponent},
+      {path: "pbstoreproj", component:PaintballStoreProjComponent},
       //TODO: Make the * path direct them to a 404 not found page, rather than an error
       {path: "*", component:NotFoundError},
     ]),

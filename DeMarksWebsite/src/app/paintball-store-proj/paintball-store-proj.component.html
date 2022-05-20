@@ -1,0 +1,126 @@
+<div [@fadeInState]="transition" style="overflow-x: hidden;">
+    <div class="row">
+        <div class="github-button">
+            <a class="button-text" routerLink="/portfolio"><span class="material-icons">
+                arrow_back
+                </span> Back to Portfolio</a>
+            <a class="button-text" href="https://github.com/andrewd1137/Paintball-Store-Web-API" target="_blank" rel="noopener noreferrer">Web API on Github</a>
+            <a class="button-text" href="https://github.com/andrewd1137/Paintball-Store-Terminal-Application" target="_blank" rel="noopener noreferrer">Terminal App Version on Github</a>
+        </div>
+        <h1 class="education-container main-headings">
+            My 2 Cents Banking/Investment
+        </h1>
+    </div>
+    <div class="education-container">
+        <div class="card" style="width: 70%; border: none;">
+            <div class="row">
+              <div class="col">
+                <img src="../assets/images/projects/paintballstoreproj/paintballstore.png" style="display: block; margin: auto;" class="img-fluid center-block">
+              </div>
+              <div class="col">
+                <div class="card-body">
+                    <h1 class="card-title">About</h1>
+                    <p class="card-text">
+                        This is a web api for a fictionary paintball franchise. I enjoy playing paintball, so I made an api that allows functionalities to
+                        get all customers, search for specific customers by email or name, verify their credentials, add a customer, get all stores, get
+                        a store's inventory, view the order history of both customer and store, replenish inventory, and place orders. Some specific information
+                        about the api include that only managers can replenish the inventory of the store, customers can add multple items to their order, and 
+                        once they are a registered user, they can order from any store. Each store does have their own list of products and there are checks to
+                        make sure you cannot order more than the inventory a store has.
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <hr class="hr-breaker">
+    <div class="education-container">
+        <div class="card" style="width: 50%; border: none;">
+            <div class="row">
+                <div class="col">
+                    <img src="../assets/images/projects/paintballstoreproj/addcustomer.png" style="display: block; margin: auto;" class="img-fluid center-block">
+                </div>
+                <div class="col">
+                    <div class="card-body">
+                        <h1 class="card-title">API in Swagger</h1>
+                        <p class="card-text">
+                           This is one of the functionalities of the api demonstrated in Swagger (tool for visualising your api). This functionality is 
+                           for adding a customer to the database. This screenshot shows that AddCustomer requires a reuest body. The information 
+                           you need to add in this body include the name, address, email and password. The json body has more information than 
+                           this, but that information is either auto incremented in the database (ex: the customer ID)
+                           or does not get read when adding a customer (ex: order info is not read in this case).
+                        </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <hr class="hr-breaker">
+    <div class="education-container">
+        <div class="card" style="width: 70%; border: none;">
+            <div class="row">
+                <div class="col">
+                    <img src="../assets/images/projects/paintballstoreproj/placeorderjson.png" style="display: block; margin: auto;" class="img-fluid center-block">
+                </div>
+                <div class="col">
+                    <div class="card-body">
+                        <h1 class="card-title">API Example (Storefront Example)</h1>
+                        <p class="card-text">
+                            This is an example of placing an order. As you can see, this json request body is more than the one above. This is because
+                            for this screenshot, I did not remove the unecessary json for this body. This let's you see all the information that this
+                            request can have. Some of it is defaulted (like the orderID). Final thing to note is that the shoppingCart (aka the user's
+                            current items they want to buy) is a list of items (denoted with the []). This means that the user can add multiple items
+                            to this order and it will show up as another set of curly brackets with the necessary information inside the list. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <hr class="hr-breaker">
+    <div class="education-container">
+        <div class="card" style="width: 70%; border: none;">
+            <div class="row">
+                <div class="col">
+                    <img src="../assets/images/projects/paintballstoreproj/terminalapp.png" style="display: block; margin: auto;" class="img-fluid center-block">
+                </div>
+                <div class="col">
+                    <div class="card-body">
+                        <h1 class="card-title">Terminal Version</h1>
+                        <p class="card-text">
+                            I also have a terminal application for this paintball store. The terminal version was made prior to the web api, so it lacks
+                            some of the features from the main api version. In this screenshot, you can see me hitting the menu option for adding a customer.
+                            I then have a menu popup for adding a customer. I then enter my first name, last name, and my fake address (even though I am always at 
+                            this desk). I then enter in an email that does not follow the normal email formatting (used regex for a simple email). Upon
+                            pressing enter with the invalid email formatting, I get a message saying that the email entry is invalid and to try again. I
+                            added security to this invalid entry feature to that the user has max 3 tries to enter in a field after failing the formatting. It
+                            will then tell them that it could not let them register at this time due to too many failed attempts and take them back to the main menu.
+                        </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <hr class="hr-breaker">
+    <div class="education-container">
+        <div class="card" style="width: 50%; border: none;">
+            <div class="row">
+                <div class="col">
+                    <img src="../assets/images/projects/paintballstoreproj/sonarcloud.png" style="display: block; margin: auto;" class="img-fluid center-block">
+                </div>
+                <div class="col">
+                    <div class="card-body">
+                        <h1 class="card-title">Unit Testing</h1>
+                        <p class="card-text">
+                            The API version of the project has roughly 52 Unit Tests in C# that tests both the models and the business layer (using moq).
+                            I then used sonar cloud to see the code coverage % of my API and to also view any code smells that my API may have.
+                        </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <div style="margin-top: 3rem;">
+        <app-footer></app-footer>
+    </div>
+</div>
