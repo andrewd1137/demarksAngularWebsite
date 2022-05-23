@@ -1,0 +1,64 @@
+<!-- TODO: This page needs to be made responsive -->
+<div [@fadeInState]="transition" class="home-container">
+    <div class="home-box home-box-fill">
+        <!-- jackInTheBox States -->
+        <span [@jackInTheBoxState]="ErrorState4" class="box-main-text" 
+            (mouseover)="changeErrorText4=true" (mouseout)="changeErrorText4=false">4
+        </span>
+        <span [@jackInTheBoxState]="ErrorState0" class=" box-main-text" 
+            (mouseover)="changeErrorText0=true" (mouseout)="changeErrorText0=false">0
+        </span>
+        <span [@jackInTheBoxState]="ErrorState41" class=" box-main-text" 
+            (mouseover)="changeErrorText41=true" (mouseout)="changeErrorText41=false">4
+        </span>
+        <!-- Tada State -->
+        <span [@shakeState]="ErrorStateP" class=" box-first-letter-text" 
+            (mouseover)="changeErrorTextP=true" (mouseout)="changeErrorTextP=false">P
+        </span>
+        <span [@shakeState]="ErrorStateA" class=" box-sub-text" 
+            (mouseover)="changeErrorTextA=true" (mouseout)="changeErrorTextA=false">a
+        </span>
+        <span [@shakeState]="ErrorStateG" class=" box-sub-text" 
+            (mouseover)="changeErrorTextG=true" (mouseout)="changeErrorTextG=false">g
+        </span>
+        <span [@shakeState]="ErrorStateE" class=" box-sub-text" 
+            (mouseover)="changeErrorTextE=true" (mouseout)="changeErrorTextE=false">e
+        </span>
+        <!-- Flash State -->
+        <span [@flashState]="ErrorStateN" class=" box-first-letter-text" 
+            (mouseover)="changeErrorTextN=true" (mouseout)="changeErrorTextN=false">N
+        </span>
+        <span [@flashState]="ErrorStateO" class=" box-sub-text" 
+            (mouseover)="changeErrorTextO=true" (mouseout)="changeErrorTextO=false">o
+        </span>
+        <span [@flashState]="ErrorStateT" class="box-sub-text" 
+        (mouseover)="changeErrorTextT=true" (mouseout)="changeErrorTextT=false">t
+        </span>
+        <!-- Jello State -->
+        <span [@jelloState]="ErrorStateF" class=" box-first-letter-text" 
+            (mouseover)="changeErrorTextF=true" (mouseout)="changeErrorTextF=false">F
+        </span>
+        <span [@jelloState]="ErrorStateO1" class=" box-sub-text" 
+            (mouseover)="changeErrorTextO1=true" (mouseout)="changeErrorTextO1=false">o
+        </span>
+        <span [@jelloState]="ErrorStateU" class=" box-sub-text" 
+            (mouseover)="changeErrorTextU=true" (mouseout)="changeErrorTextU=false">u
+        </span>
+        <span [@jelloState]="ErrorStateN1" class=" box-sub-text" 
+            (mouseover)="changeErrorTextN1=true" (mouseout)="changeErrorTextN1=false">n
+        </span>
+        <span [@jelloState]="ErrorStateD" class=" box-sub-text" 
+            (mouseover)="changeErrorTextD=true" (mouseout)="changeErrorTextD=false">d
+        </span>
+        <span [@jelloState]="ErrorStateExclamation" class=" box-sub-text" 
+            (mouseover)="changeErrorTextExclamation=true" (mouseout)="changeErrorTextExclamation=false">!
+        </span>
+    </div>
+    <div class="home-box"><img class="home-img" src="../assets/images/homeandabout/freefall.png"></div>
+    <h1 style="text-align: center;" >
+        Could not find the URL you were looking for. 
+        <br> 
+        If you need help finding something, Use the Nav Bar at the top.
+    </h1>
+    <app-footer></app-footer>
+</div>

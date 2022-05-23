@@ -26,6 +26,7 @@ import { LinkedListQueueComponent } from './linked-list-queue/linked-list-queue.
 import { GcdCalculatorComponent } from './gcd-calculator/gcd-calculator.component';
 import { MiniWebPackComponent } from './mini-web-pack/mini-web-pack.component';
 import { ArduinoLightSwitchComponent } from './arduino-light-switch/arduino-light-switch.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { ArduinoLightSwitchComponent } from './arduino-light-switch/arduino-ligh
     GcdCalculatorComponent,
     MiniWebPackComponent,
     ArduinoLightSwitchComponent,
+    ErrorComponent,
   ],
   imports: [
     BrowserModule,
@@ -66,8 +68,7 @@ import { ArduinoLightSwitchComponent } from './arduino-light-switch/arduino-ligh
       {path: "gcdcalc", component:GcdCalculatorComponent},
       {path: "miniwebpack", component:MiniWebPackComponent},
       {path: "arduinolightswitch", component:ArduinoLightSwitchComponent},
-      //TODO: Make the * path direct them to a 404 not found page, rather than an error
-      {path: "*", component:NotFoundError},
+      {path: "**", pathMatch:'full', component:ErrorComponent},
     ]),
     NgbModule,
     NgChartsModule,

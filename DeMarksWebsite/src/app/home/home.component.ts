@@ -1,6 +1,6 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { transition, trigger, useAnimation } from '@angular/animations';
-import { bounceInLeft, bounceInRight, fadeIn, fadeInUp, rubberBand, tada } from 'ng-animate';
+import { bounceInLeft, bounceInRight, fadeIn, rubberBand, tada } from 'ng-animate';
 
 @Component({
   selector: 'app-home',

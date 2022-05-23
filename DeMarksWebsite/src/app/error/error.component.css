@@ -1,0 +1,109 @@
+.home-container
+{
+    margin-top: 1rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.home-box
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:sans-serif;
+}
+
+.home-box-fill
+{
+    color: #000;
+    margin-bottom: -3rem;
+}
+
+.home-img
+{
+    border-radius: 100%;
+    margin-top: 2rem;
+    width: 50%;
+}
+
+.box-main-text
+{
+    font-size: 7rem;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.box-first-letter-text
+{
+    font-size: 7rem;
+    margin-left: 5rem;
+    font-family: 'Arial Narrow', Arial, sans-serif
+}
+
+.box-sub-text
+{
+    font-size: 7rem;
+    font-family: 'Arial Narrow', Arial, sans-serif
+}
+
+.projects-heading
+{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: black;
+}
+
+.projects-heading:before
+{
+    content:" ";
+    height: 2px;
+    width: 40%;
+    background: gray;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.projects-heading:after
+{
+    content:" ";
+    height: 2px;
+    width: 40%;
+    background: gray;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.projects-container
+{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.title-center
+{
+    text-align: center;
+}
+
+.projects-margin
+{
+    border: none;
+    margin-right: 2rem;
+}
+
+.projects-link:hover
+{
+    opacity: 50%;
+}
+
+.projects-img-border
+{
+    border: 1px solid gray;
+}
