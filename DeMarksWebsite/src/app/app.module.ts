@@ -23,6 +23,9 @@ import { MarsApiProjComponent } from './mars-api-proj/mars-api-proj.component';
 import { PaintballStoreProjComponent } from './paintball-store-proj/paintball-store-proj.component';
 import { TicTacToeProjComponent } from './tic-tac-toe-proj/tic-tac-toe-proj.component';
 import { LinkedListQueueComponent } from './linked-list-queue/linked-list-queue.component';
+import { GcdCalculatorComponent } from './gcd-calculator/gcd-calculator.component';
+import { MiniWebPackComponent } from './mini-web-pack/mini-web-pack.component';
+import { ArduinoLightSwitchComponent } from './arduino-light-switch/arduino-light-switch.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +43,9 @@ import { LinkedListQueueComponent } from './linked-list-queue/linked-list-queue.
     PaintballStoreProjComponent,
     TicTacToeProjComponent,
     LinkedListQueueComponent,
+    GcdCalculatorComponent,
+    MiniWebPackComponent,
+    ArduinoLightSwitchComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,6 +63,9 @@ import { LinkedListQueueComponent } from './linked-list-queue/linked-list-queue.
       {path: "pbstoreproj", component:PaintballStoreProjComponent},
       {path: "tictactoeproj", component:TicTacToeProjComponent},
       {path: "linkedlistqueueproj", component:LinkedListQueueComponent},
+      {path: "gcdcalc", component:GcdCalculatorComponent},
+      {path: "miniwebpack", component:MiniWebPackComponent},
+      {path: "arduinolightswitch", component:ArduinoLightSwitchComponent},
       //TODO: Make the * path direct them to a 404 not found page, rather than an error
       {path: "*", component:NotFoundError},
     ]),

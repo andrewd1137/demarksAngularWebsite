@@ -1,0 +1,58 @@
+<div [@fadeInState]="transition" style="overflow-x: hidden;">
+    <div class="row">
+        <div class="github-button">
+            <a class="button-text" routerLink="/portfolio"><span class="material-icons">
+                arrow_back
+                </span> Back to Portfolio</a>
+            <a class="button-text" href="https://github.com/andrewd1137/Mini-Web-Pack" target="_blank" rel="noopener noreferrer">View on GitHub!</a>
+        </div>
+        <h1 class="education-container main-headings">
+            Mini Web Pack
+        </h1>
+    </div>
+    <div class="education-container">
+        <div class="card" style="width: 70%; border: none;">
+            <div class="row">
+              <div class="col">
+                <img src="../assets/images/projects/miniwebpackproj/miniwebpack.png" style="display: block; margin: auto;" class="img-fluid center-block">
+              </div>
+              <div class="col">
+                <div class="card-body">
+                    <h1 class="card-title">About</h1>
+                    <p class="card-text">
+                        This is a project I made back in college. It is a simple version of a real webpack tool. Web pack tools allow us to reduce the file size
+                        of programs by removing uncecessary information from the file. This includes extra whitespace, uncecessary new lines, comments and combining
+                        files that can be combined together so you do not have multiple files. My program removes uncecessary white space, new lines and combines two
+                        files that the user selects together.
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <hr class="hr-breaker">
+    <div class="education-container">
+        <div class="card" style="width: 50%; border: none;">
+            <div class="row">
+                <div class="col">
+                    <img src="../assets/images/projects/linkedlistqueueproj/language.png" style="display: block; margin: auto;" class="img-fluid center-block">
+                </div>
+                <div class="col">
+                    <div class="card-body">
+                        <h1 class="card-title">Language</h1>
+                        <p class="card-text">
+                            This program is written in C. It uses character arrays called buffers with size of 1024. You enter two file names
+                            and it will parse through the file and remove all uncecessary white space from the code. This is because most new lines and
+                            white space in coding is used for us programmers to understand the code. It will also combine the two files into one. This signifcantly
+                            reduces the size of larger programs and it is what almost every web service uses in order to make their final projects less size and
+                            more efficeient.
+                        </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <div style="margin-top: 3rem;">
+        <app-footer></app-footer>
+    </div>
+</div>

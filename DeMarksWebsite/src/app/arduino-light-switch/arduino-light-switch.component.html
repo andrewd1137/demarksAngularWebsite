@@ -1,0 +1,59 @@
+<div [@fadeInState]="transition" style="overflow-x: hidden;">
+    <div class="row">
+        <div class="github-button">
+            <a class="button-text" routerLink="/portfolio"><span class="material-icons">
+                arrow_back
+                </span> Back to Portfolio</a>
+            <a class="button-text" href="https://github.com/andrewd1137/Arduino-Light-Switch" target="_blank" rel="noopener noreferrer">View on GitHub!</a>
+        </div>
+        <h1 class="education-container main-headings">
+            Arduino Light Switch
+        </h1>
+    </div>
+    <div class="education-container">
+        <div class="card" style="width: 70%; border: none;">
+            <div class="row">
+              <div class="col">
+                <img src="../assets/images/projects/arduinolightproj/arduino.png" style="display: block; margin: auto;" class="img-fluid center-block">
+              </div>
+              <div class="col">
+                <div class="card-body">
+                    <h1 class="card-title">About</h1>
+                    <p class="card-text">
+                        This is a project I made for my Computer Organization/Computer Architecture Lab. This project is a very simple
+                        micro-controller project that just uses a couple of hardware components. It uses an RGB LED, a few wires, a button, a resistor,
+                        a shock sensor, and a bread board. I then wrote the code for the button to change colors based on the button click. The shock sensor
+                        detects if you hit/shake the snesor and it acts as a 'kill switch' to shutoff the led. It will reset the led back to the beginning sequence.
+                        The sequence goes as follows: first button press = static red led, second button press = flashing green light, third button press = static 
+                        green led, and if at any point you hit the shock sensor, the light will turn off and the next button press will always 
+                        start back to the static red.
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <hr class="hr-breaker">
+    <div class="education-container">
+        <div class="card" style="width: 50%; border: none;">
+            <div class="row">
+                <div class="col">
+                    <img src="../assets/images/projects/arduinolightproj/arduinouno.png" style="display: block; margin: auto;" class="img-fluid center-block">
+                </div>
+                <div class="col">
+                    <div class="card-body">
+                        <h1 class="card-title">Arduino Language</h1>
+                        <p class="card-text">
+                            The Arduino language uses something called INO. It stands for 'Arduino Sketch.' There is virtually no difference between a .INO file and
+                            a .CPP (c++) file. There isn't any difference between the programming language or file format, but you do use the Arduino IDE
+                            in order to build and run the Arduino projects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <div style="margin-top: 3rem;">
+        <app-footer></app-footer>
+    </div>
+</div>
