@@ -39,3 +39,21 @@
 {
     color: white;
 }
+
+.side-nav-text
+{
+    color: white;
+    border-radius: 0;
+    padding-bottom: 0.5rem;
+}
+
+.side-nav-text:hover
+{
+    opacity: 50%;
+}
+
+.mat-sidenav-container
+{   
+    height: 100%;
+    position: absolute;    
+}

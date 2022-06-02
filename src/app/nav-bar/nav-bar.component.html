@@ -1,28 +1,34 @@
-<!-- TODO: This page needs to be made responsive -->
-
 <div [@navBarTrigger]="state" class="flex-container">
-    <div class="flexbox-item">
-        <a class="demarks-nav-bar-link demarks-logo" routerLink="/" (click)="toggle()"><img src="../assets/images/navbar/andydemarks.jpg" alt="andydemarks"></a>        
+  <mat-toolbar>
+    <div fxShow="true" fxHide.gt-sm="true">
+      <button style="border: none; background-color: black;" (click)="sidenav.toggle()">
+        <mat-icon class="side-nav-text side-nav-button" style="color: white;">menu</mat-icon>
+      </button>
     </div>
-    <div class="flexbox-item">
-        <a class="demarks-nav-bar-link" routerLink="/about" (click)="toggle()">about</a>
+    <a mat-button routerLink="/">
+      <a class="demarks-nav-bar-link demarks-logo" routerLink="/" (click)="toggle()"><img src="../assets/images/navbar/andydemarks.jpg" alt="andydemarks"></a>
+    </a>
+    <div class="flex-container" fxShow="true" fxHide.lt-md="true">
+      <a class="demarks-nav-bar-link" routerLink="/about" (click)="toggle()">about</a>
+      <a class="demarks-nav-bar-link" routerLink="/education" (click)="toggle()">education</a>
+      <a class="demarks-nav-bar-link" routerLink="/portfolio" (click)="toggle()">portfolio</a>        
+      <a class="demarks-nav-bar-link" href="https://github.com/andrewd1137" target="_blank" rel="noopener noreferrer"><img src="../assets/images/navbar/githublogo.png" alt="GitHub"></a>
+      <a class="demarks-nav-bar-link" href="https://www.instagram.com/andrewd1137/" target="_blank" rel="noopener noreferrer"><img height="32px" src="../assets/images/navbar/instalogo.png" alt="Instagram"></a>
+      <a class="demarks-nav-bar-link" href="https://www.linkedin.com/in/andydemarks/" target="_blank" rel="noopener noreferrer"><img height="32px" src="../assets/images/navbar/lilogo.png" alt="LinkedIn"></a>        
+      <a class="demarks-nav-bar-link" href="https://www.youtube.com/channel/UCzEB3VjW96lx4koxaSQ16mQ" target="_blank" rel="noopener noreferrer"><img height="32px" src="../assets/images/navbar/ytlogo.png" alt="Youtube"></a>          
     </div>
-    <div class="flexbox-item">
-        <a class="demarks-nav-bar-link" routerLink="/education" (click)="toggle()">education</a>
-    </div>
-    <div class="flexbox-item">
-        <a class="demarks-nav-bar-link" routerLink="/portfolio" (click)="toggle()">portfolio</a>        
-    </div>
-    <div class="flexbox-item">
-        <a class="demarks-nav-bar-link" href="https://github.com/andrewd1137" target="_blank" rel="noopener noreferrer"><img src="../assets/images/navbar/githublogo.png" alt="GitHub"></a>
-    </div>
-    <div class="flexbox-item">
-        <a class="demarks-nav-bar-link" href="https://www.instagram.com/andrewd1137/" target="_blank" rel="noopener noreferrer"><img height="32px" src="../assets/images/navbar/instalogo.png" alt="Instagram"></a>
-    </div>
-    <div class="flexbox-item">
-        <a class="demarks-nav-bar-link" href="https://www.linkedin.com/in/andydemarks/" target="_blank" rel="noopener noreferrer"><img height="32px" src="../assets/images/navbar/lilogo.png" alt="Instagram"></a>        
-    </div>
-    <div class="flexbox-item">
-        <a class="demarks-nav-bar-link" href="https://www.youtube.com/channel/UCzEB3VjW96lx4koxaSQ16mQ" target="_blank" rel="noopener noreferrer"><img height="32px" src="../assets/images/navbar/ytlogo.png" alt="Youtube"></a>          
-    </div>
+  </mat-toolbar>
 </div>
+<mat-sidenav-container fxFlexFill>
+  <mat-sidenav #sidenav fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true">
+    <div style="background-color:black" fxLayout="column">
+      <a mat-button class="side-nav-text" routerLink="/about">about</a>
+      <a mat-button class="side-nav-text" routerLink="/education">education</a>
+      <a mat-button class="side-nav-text" routerLink="/portfolio">portfolio</a>
+      <a mat-button class="side-nav-text" href="https://github.com/andrewd1137" target="_blank" rel="noopener noreferrer"><img src="../assets/images/navbar/githublogo.png" alt="GitHub"></a>
+      <a mat-button class="side-nav-text" href="https://www.instagram.com/andrewd1137/" target="_blank" rel="noopener noreferrer"><img height="32px" src="../assets/images/navbar/instalogo.png" alt="Instagram"></a>
+      <a mat-button class="side-nav-text" href="https://www.linkedin.com/in/andydemarks/" target="_blank" rel="noopener noreferrer"><img height="32px" src="../assets/images/navbar/lilogo.png" alt="LinkedIn"></a>
+      <a mat-button class="side-nav-text" href="https://www.youtube.com/channel/UCzEB3VjW96lx4koxaSQ16mQ" target="_blank" rel="noopener noreferrer"><img height="32px" src="../assets/images/navbar/ytlogo.png" alt="Youtube"></a>
+    </div>
+  </mat-sidenav>
+</mat-sidenav-container>

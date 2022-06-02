@@ -5,13 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import {MatIconModule} from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatButtonModule} from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { EducationComponent } from './education/education.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { RouterModule } from '@angular/router';
-import { NotFoundError } from 'rxjs';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 import { NgChartsModule } from 'ng2-charts';
@@ -27,6 +29,7 @@ import { GcdCalculatorComponent } from './gcd-calculator/gcd-calculator.componen
 import { MiniWebPackComponent } from './mini-web-pack/mini-web-pack.component';
 import { ArduinoLightSwitchComponent } from './arduino-light-switch/arduino-light-switch.component';
 import { ErrorComponent } from './error/error.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -72,7 +75,11 @@ import { ErrorComponent } from './error/error.component';
     ]),
     NgbModule,
     NgChartsModule,
-    AnimateOnScrollModule.forRoot()
+    AnimateOnScrollModule.forRoot(),
+    FlexLayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
