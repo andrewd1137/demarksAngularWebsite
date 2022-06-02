@@ -1,14 +1,13 @@
-<div [@navBarTrigger]="state" class="flex-container">
+<div [@navBarTrigger]="state" class="main-container">
   <mat-toolbar>
     <div fxShow="true" fxHide.gt-sm="true">
       <button style="border: none; background-color: black;" (click)="sidenav.toggle()">
         <mat-icon class="side-nav-text side-nav-button" style="color: white;">menu</mat-icon>
       </button>
-    </div>
-    <a mat-button routerLink="/">
       <a class="demarks-nav-bar-link demarks-logo" routerLink="/" (click)="toggle()"><img src="../assets/images/navbar/andydemarks.jpg" alt="andydemarks"></a>
-    </a>
-    <div class="flex-container" fxShow="true" fxHide.lt-md="true">
+    </div>
+    <div class="flexbox-container" fxShow="true" fxHide.lt-md="true">
+      <a class="demarks-nav-bar-link demarks-logo" routerLink="/" (click)="toggle()"><img src="../assets/images/navbar/andydemarks.jpg" alt="andydemarks"></a>
       <a class="demarks-nav-bar-link" routerLink="/about" (click)="toggle()">about</a>
       <a class="demarks-nav-bar-link" routerLink="/education" (click)="toggle()">education</a>
       <a class="demarks-nav-bar-link" routerLink="/portfolio" (click)="toggle()">portfolio</a>        
