@@ -1,7 +1,7 @@
 <div [@navBarTrigger]="state" class="main-container">
   <mat-toolbar>
     <div fxShow="true" fxHide.gt-sm="true">
-      <button style="border: none; background-color: black;" (click)="sidenav.toggle()" (window:scroll)="sidenav.close()">
+      <button style="border: none; background-color: black;" (click)="sidenav.toggle()">
         <mat-icon class="side-nav-text side-nav-button" style="color: white;">menu</mat-icon>
       </button>
       <a class="demarks-nav-bar-link demarks-logo" routerLink="/" (click)="toggle()" (click)="sidenav.toggle(false)"><img src="../assets/images/navbar/andydemarks.jpg" alt="andydemarks"></a>
@@ -18,7 +18,7 @@
     </div>
   </mat-toolbar>
 </div>
-<mat-sidenav-container fxFlexFill>
+<mat-sidenav-container style="position: fixed;" fxFlexFill>
   <mat-sidenav #sidenav fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true">
     <div style="background-color:black;" fxLayout="column">
       <a mat-button class="side-nav-text" routerLink="/about" (click)="sidenav.close()">about</a>
