@@ -1,5 +1,5 @@
-import { animate, state, style, transition, trigger, useAnimation } from '@angular/animations';
-import { AfterViewInit, Component } from '@angular/core';
+import { transition, trigger, useAnimation } from '@angular/animations';
+import { Component } from '@angular/core';
 import { fadeInDown } from 'ng-animate';
 
 @Component({
@@ -18,8 +18,19 @@ import { fadeInDown } from 'ng-animate';
 
 export class NavBarComponent {
   state:boolean = false;
+  btnStyle:boolean = false;
 
   constructor() { }
+
+  buttonOn()
+  {
+    this.btnStyle = true;
+  }
+
+  buttonOff()
+  {
+    this.btnStyle = false;
+  }
 
   toggle()
   {

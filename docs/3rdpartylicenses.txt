@@ -229,9 +229,6 @@ terms above.
 ng-animate
 MIT
 
-ng2-animate-on-scroll
-MIT
-
 ng2-charts
 ISC
 

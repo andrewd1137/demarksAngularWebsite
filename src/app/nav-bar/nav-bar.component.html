@@ -1,10 +1,10 @@
 <div [@navBarTrigger]="state" class="main-container">
   <mat-toolbar>
     <div fxShow="true" fxHide.gt-sm="true">
-      <button style="border: none; background-color: black;" (click)="sidenav.toggle()">
+      <button style="border: none; background-color: black;" (click)="sidenav.toggle()" (window:scroll)="sidenav.close()">
         <mat-icon class="side-nav-text side-nav-button" style="color: white;">menu</mat-icon>
       </button>
-      <a class="demarks-nav-bar-link demarks-logo" routerLink="/" (click)="toggle()"><img src="../assets/images/navbar/andydemarks.jpg" alt="andydemarks"></a>
+      <a class="demarks-nav-bar-link demarks-logo" routerLink="/" (click)="toggle()" (click)="sidenav.toggle(false)"><img src="../assets/images/navbar/andydemarks.jpg" alt="andydemarks"></a>
     </div>
     <div class="flexbox-container" fxShow="true" fxHide.lt-md="true">
       <a class="demarks-nav-bar-link demarks-logo" routerLink="/" (click)="toggle()"><img src="../assets/images/navbar/andydemarks.jpg" alt="andydemarks"></a>
@@ -20,14 +20,15 @@
 </div>
 <mat-sidenav-container fxFlexFill>
   <mat-sidenav #sidenav fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true">
-    <div style="background-color:black" fxLayout="column">
-      <a mat-button class="side-nav-text" routerLink="/about">about</a>
-      <a mat-button class="side-nav-text" routerLink="/education">education</a>
-      <a mat-button class="side-nav-text" routerLink="/portfolio">portfolio</a>
+    <div style="background-color:black;" fxLayout="column">
+      <a mat-button class="side-nav-text" routerLink="/about" (click)="sidenav.close()">about</a>
+      <a mat-button class="side-nav-text" routerLink="/education" (click)="sidenav.close()">education</a>
+      <a mat-button class="side-nav-text" routerLink="/portfolio" (click)="sidenav.close()">portfolio</a>
       <a mat-button class="side-nav-text" href="https://github.com/andrewd1137" target="_blank" rel="noopener noreferrer"><img src="../assets/images/navbar/githublogo.png" alt="GitHub"></a>
       <a mat-button class="side-nav-text" href="https://www.instagram.com/andrewd1137/" target="_blank" rel="noopener noreferrer"><img height="32px" src="../assets/images/navbar/instalogo.png" alt="Instagram"></a>
       <a mat-button class="side-nav-text" href="https://www.linkedin.com/in/andydemarks/" target="_blank" rel="noopener noreferrer"><img height="32px" src="../assets/images/navbar/lilogo.png" alt="LinkedIn"></a>
       <a mat-button class="side-nav-text" href="https://www.youtube.com/channel/UCzEB3VjW96lx4koxaSQ16mQ" target="_blank" rel="noopener noreferrer"><img height="32px" src="../assets/images/navbar/ytlogo.png" alt="Youtube"></a>
     </div>
   </mat-sidenav>
+  <router-outlet></router-outlet>
 </mat-sidenav-container>

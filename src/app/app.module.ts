@@ -18,7 +18,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 import { NgChartsModule } from 'ng2-charts';
 import { AboutMePieComponent } from './about-me-pie/about-me-pie.component';
-import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { My2centsComponent } from './my2cents/my2cents.component';
 import { SimpleCalcProjectComponent } from './simple-calc-project/simple-calc-project.component';
 import { MarsApiProjComponent } from './mars-api-proj/mars-api-proj.component';
@@ -75,7 +74,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     ]),
     NgbModule,
     NgChartsModule,
-    AnimateOnScrollModule.forRoot(),
     FlexLayoutModule,
     MatToolbarModule,
     MatButtonModule,
