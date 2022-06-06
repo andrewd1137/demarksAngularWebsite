@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TopOfPageService } from '../services/top-of-page.service';
 
 @Component({
   selector: 'app-footer',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private topService: TopOfPageService) { }
+
+  toggle()
+  {
+    this.topService.toTopOfPage();
+  }
 
   ngOnInit(): void {
   }

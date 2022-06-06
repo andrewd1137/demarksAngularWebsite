@@ -1,6 +1,7 @@
 import { transition, trigger, useAnimation } from '@angular/animations';
 import { Component } from '@angular/core';
 import { fadeInDown } from 'ng-animate';
+import { TopOfPageService } from '../services/top-of-page.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -16,24 +17,15 @@ import { fadeInDown } from 'ng-animate';
   ] 
 })
 
-export class NavBarComponent {
+export class NavBarComponent{
   state:boolean = false;
   btnStyle:boolean = false;
 
-  constructor() { }
-
-  buttonOn()
-  {
-    this.btnStyle = true;
-  }
-
-  buttonOff()
-  {
-    this.btnStyle = false;
-  }
-
+  constructor(private topService: TopOfPageService) { }
+  
   toggle()
   {
+    this.topService.toTopOfPage();
     this.state = !this.state;
   }
 

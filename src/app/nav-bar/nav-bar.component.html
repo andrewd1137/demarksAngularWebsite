@@ -21,14 +21,17 @@
 <mat-sidenav-container style="position: fixed;" fxFlexFill>
   <mat-sidenav #sidenav fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true">
     <div style="background-color:black;" fxLayout="column">
-      <a mat-button class="side-nav-text" routerLink="/about" (click)="sidenav.close()">about</a>
-      <a mat-button class="side-nav-text" routerLink="/education" (click)="sidenav.close()">education</a>
-      <a mat-button class="side-nav-text" routerLink="/portfolio" (click)="sidenav.close()">portfolio</a>
+      <a mat-button class="side-nav-text" routerLink="/about" (click)="sidenav.close()" (click)="toggle()">about</a>
+      <a mat-button class="side-nav-text" routerLink="/education" (click)="sidenav.close()" (click)="toggle()">education</a>
+      <a mat-button class="side-nav-text" routerLink="/portfolio" (click)="sidenav.close()" (click)="toggle()">portfolio</a>
       <a mat-button class="side-nav-text" href="https://github.com/andrewd1137" target="_blank" rel="noopener noreferrer"><img src="../assets/images/navbar/githublogo.png" alt="GitHub"></a>
       <a mat-button class="side-nav-text" href="https://www.instagram.com/andrewd1137/" target="_blank" rel="noopener noreferrer"><img height="32px" src="../assets/images/navbar/instalogo.png" alt="Instagram"></a>
       <a mat-button class="side-nav-text" href="https://www.linkedin.com/in/andydemarks/" target="_blank" rel="noopener noreferrer"><img height="32px" src="../assets/images/navbar/lilogo.png" alt="LinkedIn"></a>
       <a mat-button class="side-nav-text" href="https://www.youtube.com/channel/UCzEB3VjW96lx4koxaSQ16mQ" target="_blank" rel="noopener noreferrer"><img height="32px" src="../assets/images/navbar/ytlogo.png" alt="Youtube"></a>
     </div>
   </mat-sidenav>
+  <!-- ugly i know, but nothing else would work to get page to move to the top, so i did this ugly cheat work around -->
+  <h6 id="moveTop"></h6>
   <router-outlet></router-outlet>
+  <app-footer></app-footer>
 </mat-sidenav-container>

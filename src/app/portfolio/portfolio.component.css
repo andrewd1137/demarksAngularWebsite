@@ -16,6 +16,7 @@
 
 .projects-heading
 {
+    word-break: keep-all;
     background-color: lightgray;
     text-align: center;
 }

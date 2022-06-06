@@ -3,14 +3,7 @@
     display: flex;
     justify-content: center;
     margin-top: 1rem;
-    height: 73vh;
     background-color:#fff;
-    display:grid;
-    grid-template-columns: 45% 45%;
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 .home-box
@@ -34,7 +27,6 @@
 
 .box-main-text
 {
-    font-size: 7rem;
     opacity: 75%;
     font-weight: bold;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
@@ -42,7 +34,6 @@
 
 .box-sub-text
 {
-    font-size: 7rem;
     opacity: 75%;
     font-family: 'Arial Narrow', Arial, sans-serif
 }
@@ -62,7 +53,6 @@
 {
     content:" ";
     height: 2px;
-    width: 40%;
     background: gray;
     display: block;
     position: absolute;
@@ -74,7 +64,6 @@
 {
     content:" ";
     height: 2px;
-    width: 40%;
     background: gray;
     display: block;
     position: absolute;
@@ -107,4 +96,118 @@
 .projects-img-border
 {
     border: 1px solid gray;
+}
+
+/* media queries for responsive design */
+/* If the screen size is 1501px wide or more */
+@media screen and (min-width: 1501px) {
+    .home-container
+    {
+        height: 73vh;
+        display:grid;
+        grid-template-columns: 45% 45%;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .box-main-text
+    {
+        font-size: 7rem;
+    }
+    .box-sub-text
+    {
+        font-size: 7rem;
+    }
+    .projects-heading::before
+    {
+        width: 40%;
+    }
+    .projects-heading::after
+    {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .home-container
+    {
+        height: 73vh;
+        display:grid;
+        grid-template-columns: 45% 45%;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .box-main-text
+    {
+        font-size: 7rem;
+    }
+    .box-sub-text
+    {
+        font-size: 7rem;
+    }
+    .projects-heading::before
+    {
+        width: 35%;
+    }
+    .projects-heading::after
+    {
+        width: 35%;
+    }
+}
+
+/* if the screen is less than 1400px (but greater than 800) */
+@media screen and (max-width: 1400px) {
+    .home-container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .box-main-text
+    {
+        margin-bottom: 2rem;
+        font-size: 6rem;
+    }
+    .box-sub-text
+    {
+        margin-bottom: 2rem;
+        font-size: 6rem;
+    }
+    .projects-heading::before
+    {
+        width: 30%;
+    }
+    .projects-heading::after
+    {
+        width: 30%;
+    }
+}
+
+/* if the screen is less than 850px */
+@media screen and (max-width: 850px) {
+    .home-container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .box-main-text
+    {
+        margin-bottom: 2rem;
+        font-size: 4rem;
+    }
+    .box-sub-text
+    {
+        margin-bottom: 2rem;
+        font-size: 4rem;
+    }
+    .projects-heading::before
+    {
+        width: 0%;
+    }
+    .projects-heading::after
+    {
+        width: 0%;
+    }
 }
