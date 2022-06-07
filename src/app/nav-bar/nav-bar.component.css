@@ -1,6 +1,7 @@
 .main-container
 {
     background-color: #000;
+    overflow: none;
 }
 
 .flexbox-container
