@@ -99,3 +99,90 @@
     font-size: 1.5rem;
     text-align: left;
 }
+
+
+/* For Phone */
+.about-phone-title
+{
+    word-break: keep-all;
+    text-align: center;
+}
+
+.about-phone-sub-title
+{
+    font-weight: normal;
+    word-break: keep-all;
+    text-align: center;
+}
+
+.about-phone-text
+{
+    font-weight: normal;
+    word-break: keep-all;
+    text-align: center;
+}
+
+/* media queries for responsive design */
+/* If the screen size is 801px wide or more */
+@media screen and (min-width: 1601px) {
+    .phone-container
+    {
+        display: none;
+    }
+}
+  
+/* If the screen size is 800px wide or less */
+@media screen and (max-width: 1600px) {
+    .computer-container
+    {
+        display: none;
+    }
+
+    .about-phone-title
+    {
+        font-size: 64px;
+    }
+
+    .about-phone-sub-title
+    {
+        font-size: 32px;
+    }
+
+    .about-phone-text
+    {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .computer-container
+    {
+        display: none;
+    }
+
+    .about-phone-title
+    {
+        font-size: 28px;
+    }
+
+    .about-phone-sub-title
+    {
+        font-size: 24px;
+    }
+
+    .about-phone-text
+    {
+        font-size: 16px;
+    }
+    .phone-fun-facts-heading
+    {
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .phone-bullet-items
+    {
+        font-size: 16px;
+        text-align: center;
+    }
+}

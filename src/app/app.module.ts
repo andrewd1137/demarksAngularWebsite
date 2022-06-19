@@ -29,6 +29,7 @@ import { MiniWebPackComponent } from './mini-web-pack/mini-web-pack.component';
 import { ArduinoLightSwitchComponent } from './arduino-light-switch/arduino-light-switch.component';
 import { ErrorComponent } from './error/error.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { AboutMePhonePieComponent } from './about-me-phone-pie/about-me-phone-pie.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MiniWebPackComponent,
     ArduinoLightSwitchComponent,
     ErrorComponent,
+    AboutMePhonePieComponent,
   ],
   imports: [
     BrowserModule,

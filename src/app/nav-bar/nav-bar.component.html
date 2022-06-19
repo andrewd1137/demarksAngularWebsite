@@ -18,7 +18,7 @@
     </div>
   </mat-toolbar>
 </div>
-<mat-sidenav-container style="position: fixed;" fxFlexFill>
+<mat-sidenav-container style="overflow-y: hidden;" fxFlexFill>
   <mat-sidenav #sidenav fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true">
     <div style="background-color:black;" fxLayout="column">
       <a mat-button class="side-nav-text" routerLink="/about" (click)="sidenav.close()" (click)="toggle()">about</a>
@@ -33,5 +33,4 @@
   <!-- ugly i know, but nothing else would work to get page to move to the top, so i did this ugly cheat work around -->
   <h6 id="moveTop"></h6>
   <router-outlet></router-outlet>
-  <app-footer></app-footer>
 </mat-sidenav-container>

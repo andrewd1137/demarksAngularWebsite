@@ -1,71 +1,111 @@
-<!-- TODO: This page needs to be made responsive -->
-<div class="about-me-container">
-  <div [@slideInLeft]="transition" class="about-me-box">
-    <h2 class="about-me-heading">
-      {{aboutMeTitle}}
-      <span><p class="about-me-text">{{displayText}}
-        <!-- the span below only shows if you click on the nasa image -->
-        <span *ngIf="active4">(<a href="https://api.nasa.gov/" target="_blank" rel="noopener noreferrer">api.nasa.gov</a>) 
-          in a coding project. Check it out my portfolio page on this site!</span></p>
-        </span>
-    </h2>
+<!-- Computer Content (1601px width or larger)-->
+<div class="computer-container">
+  <div class="about-me-container">
+    <div [@slideInLeft]="transition" class="about-me-box">
+      <h2 class="about-me-heading">
+        {{aboutMeTitle}}
+        <span><p class="about-me-text">{{displayText}}
+          <!-- the span below only shows if you click on the nasa image -->
+          <span *ngIf="active4">(<a href="https://api.nasa.gov/" target="_blank" rel="noopener noreferrer">api.nasa.gov</a>) 
+            in a coding project. Check it out my portfolio page on this site!</span></p>
+          </span>
+      </h2>
+    </div>
+    <div [@slideInRight]="transition" class="about-me-box">
+      <img [src]="headingImage" class="img-thumbnail about-img-heading">
+    </div>
   </div>
-  <div [@slideInRight]="transition" class="about-me-box">
-    <img [src]="headingImage" class="img-thumbnail about-img-heading">
+  <div class="flex-container">
+    <div *ngIf="!active1" class="flexbox-item">
+      <img [@flipInState]="transition" [src]="aboutMeImg" class="img-thumbnail about-img" (click)="showText(1)">        
+    </div>
+    <div *ngIf="!active2" class="flexbox-item">
+      <img [@flipInState]="transition" [src]="alwaysLearningImg" class="img-thumbnail about-img" (click)="showText(2)"> 
+    </div>
+    <div *ngIf="!active3" class="flexbox-item">
+      <img [@flipInState]="transition" [src]="travelingImg" class="img-thumbnail about-img" (click)="showText(3)"> 
+    </div>
+    <div *ngIf="!active4" class="flexbox-item">
+      <img [@flipInState]="transition" [src]="lifeGoalImg" class="img-thumbnail about-img" (click)="showText(4)">         
+    </div>
+    <div *ngIf="!active5" class="flexbox-item">
+      <img [@flipInState]="transition" [src]="videoGamesImg" class="img-thumbnail about-img" (click)="showText(5)"> 
+    </div>
   </div>
-</div>
-<div class="flex-container">
-  <div *ngIf="!active1" class="flexbox-item">
-    <img [@flipInState]="transition" [src]="aboutMeImg" class="img-thumbnail about-img" (click)="showText(1)">        
-  </div>
-  <div *ngIf="!active2" class="flexbox-item">
-    <img [@flipInState]="transition" [src]="alwaysLearningImg" class="img-thumbnail about-img" (click)="showText(2)"> 
-  </div>
-  <div *ngIf="!active3" class="flexbox-item">
-    <img [@flipInState]="transition" [src]="travelingImg" class="img-thumbnail about-img" (click)="showText(3)"> 
-  </div>
-  <div *ngIf="!active4" class="flexbox-item">
-    <img [@flipInState]="transition" [src]="lifeGoalImg" class="img-thumbnail about-img" (click)="showText(4)">         
-  </div>
-  <div *ngIf="!active5" class="flexbox-item">
-    <img [@flipInState]="transition" [src]="videoGamesImg" class="img-thumbnail about-img" (click)="showText(5)"> 
-  </div>
-</div>
-<hr style="margin-bottom: 2rem; height: 0.25rem;">
-<app-about-me-pie></app-about-me-pie>
-<hr style="margin-bottom: 2rem; height: 0.25rem;">
-<div [@fadeInState]="fadeIn">
-  <div class="fun-facts-container">
-    <div class="about-me-box">
-      <div class="container">
-        <div class="row">
-          <h2 class="fun-facts-heading">Fun Facts</h2>
-        </div>
-        <div>
+  <hr style="margin-bottom: 2rem; height: 0.25rem;">
+  <app-about-me-pie></app-about-me-pie>
+  <hr style="margin-bottom: 2rem; height: 0.25rem;">
+  <div [@fadeInState]="fadeIn">
+    <div class="fun-facts-container">
+      <div class="about-me-box">
+        <div class="container">
           <div class="row">
-            <h6 class="bullet-items">• I have 4 tattoos</h6>
+            <h2 class="fun-facts-heading">Fun Facts</h2>
           </div>
-          <div class="row">
-            <h6 class="bullet-items">• My favorite snack is popcorn</h6>
-          </div>
-          <div class="row">
-            <h6 class="bullet-items">• I like spiders</h6>
-          </div>
-          <div class="row">
-            <h6 class="bullet-items">• I don't have any pets</h6>
-          </div>
-          <div class="row">
-            <h6 class="bullet-items">• I like going for runs</h6>
-          </div>
-          <div class="row">
-            <h6 class="bullet-items">• I can ice skate</h6>
+          <div>
+            <div class="row">
+              <h6 class="bullet-items">• I have 4 tattoos</h6>
+            </div>
+            <div class="row">
+              <h6 class="bullet-items">• My favorite snack is popcorn</h6>
+            </div>
+            <div class="row">
+              <h6 class="bullet-items">• I like spiders</h6>
+            </div>
+            <div class="row">
+              <h6 class="bullet-items">• I don't have any pets</h6>
+            </div>
+            <div class="row">
+              <h6 class="bullet-items">• I like going for runs</h6>
+            </div>
+            <div class="row">
+              <h6 class="bullet-items">• I can ice skate</h6>
+            </div>
           </div>
         </div>
       </div>
+      <div class="about-me-box">
+        <img src="../assets/images/homeandabout/freefall.png" class="img-thumbnail about-img-heading">
+      </div>
     </div>
-    <div class="about-me-box">
-      <img src="../assets/images/homeandabout/freefall.png" class="img-thumbnail about-img-heading">
+    <app-footer></app-footer>
+  </div>
+</div>
+
+<!-- Phone Content (1600 width or smaller)-->
+<div class="phone-container" style="overflow-x: hidden;">
+  <h1 class="about-phone-title">
+    Tap Image to cycle through more about me!
+  </h1>
+  <div [@fadeInState]="fadeIn">
+    <div style="min-width: 25%;">
+        <img [src]="headingImage" width="100%" style="display: block; margin: auto;" (click)="cycleAboutMe()">
     </div>
+    <div style="margin-left: 1rem; margin-right: 1rem;">
+      <h3 class="about-phone-sub-title">{{aboutMeTitle}}</h3>
+      <p class="about-phone-text">
+        <span><p class="about-phone-text">{{displayText}}
+          <!-- the span below only shows if you click on the nasa image -->
+          <span *ngIf="active4">(<a href="https://api.nasa.gov/" target="_blank" rel="noopener noreferrer">api.nasa.gov</a>) 
+            in a coding project. Check it out my portfolio page on this site!</span></p>
+        </span>
+      </p>
+    </div>
+    <hr style="margin-bottom: 2rem; height: 0.25rem;">
+    <app-about-me-phone-pie></app-about-me-phone-pie>
+    <hr style="margin-bottom: 2rem; height: 0.25rem;">
+    <img src="../assets/images/homeandabout/freefall.png" style="width: 100%;">
+    <div class="row">
+      <h2 class="phone-fun-facts-heading">Fun Facts</h2>
+    </div>
+    <div>
+      <h6 class="phone-bullet-items">• I have 4 tattoos</h6>
+        <h6 class="phone-bullet-items">• My favorite snack is popcorn</h6>
+        <h6 class="phone-bullet-items">• I like spiders</h6>
+        <h6 class="phone-bullet-items">• I don't have any pets</h6>
+        <h6 class="phone-bullet-items">• I like going for runs</h6>
+        <h6 class="phone-bullet-items">• I can ice skate</h6>
   </div>
   <app-footer></app-footer>
 </div>
+    

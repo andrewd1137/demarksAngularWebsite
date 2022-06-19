@@ -37,6 +37,7 @@ import { fadeIn, flipInX, rubberBand, slideInLeft, slideInRight } from 'ng-anima
 export class AboutComponent implements OnInit, AfterViewInit {
   transition:boolean = false;
   fadeIn:string = 'none';
+  index:number = 1;
 
   active1:boolean = false;
   active2:boolean = false;
@@ -97,6 +98,24 @@ export class AboutComponent implements OnInit, AfterViewInit {
     this.active3 = false;
     this.active4 = false;
     this.active5 = false;
+  }
+
+  cycleAboutMe()
+  {
+    this.index = this.index + 1;
+    if(this.index === 6)
+    {
+      this.index = 1;
+    }
+    this.showText(this.index);
+    if(this.fadeIn === 'maximum')
+    {
+      this.fadeIn = "Fade IN";
+    }
+    else
+    {
+      this.fadeIn = "maximum";
+    }
   }
 
   showText(textNum:number)

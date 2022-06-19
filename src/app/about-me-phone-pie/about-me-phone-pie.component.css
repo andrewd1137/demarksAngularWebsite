@@ -1,0 +1,48 @@
+.component-container
+{
+    overflow: hidden;
+}
+
+.pie-container
+{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pie-main-heading
+{
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.pie-side-heading
+{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.pie-center-heading
+{
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.pie-side-text
+{
+    text-align: center;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.pie-center-text
+{
+    text-align: center;
+    font-weight: normal;
+    font-size: 1rem;
+}
