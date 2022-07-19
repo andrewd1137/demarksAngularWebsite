@@ -72,6 +72,7 @@ export class HomeComponent implements AfterViewInit{
   
   ngAfterViewInit(): void {
     this.transition = 'none';
+    alert("NOTICE: The individual portfolio pages are not responsive for smaller devices. I work full time and have other priorities. Please don't judge me :)");
   }
 
   //All the states for 'Adventuruous' word on home page
