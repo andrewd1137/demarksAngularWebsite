@@ -40,6 +40,8 @@ import { bounceInLeft, bounceInRight, fadeIn, rubberBand, tada } from 'ng-animat
   ] 
 })
 export class HomeComponent implements AfterViewInit{
+  alertMessage: boolean = true;
+  
   transition:string = 'none';
   fadeIn:string = 'none';
 
@@ -72,9 +74,13 @@ export class HomeComponent implements AfterViewInit{
   
   ngAfterViewInit(): void {
     this.transition = 'none';
-    alert("NOTICE: The individual portfolio pages are not responsive for smaller devices. I work full time and have other priorities. Please don't judge me :)");
+    this.alertMessage = true;
   }
 
+  showHideAlert() {
+    this.alertMessage = false;
+  }
+  
   //All the states for 'Adventuruous' word on home page
   get adventureStateA()
   {
