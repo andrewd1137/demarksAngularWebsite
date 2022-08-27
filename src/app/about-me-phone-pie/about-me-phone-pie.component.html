@@ -8,7 +8,15 @@
   [options]="pieChartOptions"
   [plugins]="pieChartPlugins"
   (chartClick)="chartClicked($event)">
-  </canvas>    
+  </canvas>
+  <div [@fadeIn]="transition" *ngIf="showAdventurer" class="col">
+    <h1 class="pie-side-heading">Adventurer</h1>
+    <h6 class="pie-side-text">Traveling</h6>
+    <h6 class="pie-side-text">Scuba Diving</h6>
+    <h6 class="pie-side-text">Sky Diving</h6>
+    <h6 class="pie-side-text">Paintball</h6>
+    <h6 class="pie-side-text">Tattoo Lover</h6> 
+  </div>    
   <div [@fadeIn]="transition" *ngIf="showGamer" class="col">
     <h1 class="pie-center-heading">Gamer</h1>
     <h6 class="pie-center-text">League of Legends</h6>
@@ -24,14 +32,6 @@
     <h6 class="pie-side-text">C#</h6>
     <h6 class="pie-side-text">Python</h6>
     <h6 class="pie-side-text">SQL</h6> 
-  </div>
-  <div [@fadeIn]="transition" *ngIf="showAdventurer" class="col">
-    <h1 class="pie-side-heading">Adventurer</h1>
-    <h6 class="pie-side-text">Traveling</h6>
-    <h6 class="pie-side-text">Scuba Diving</h6>
-    <h6 class="pie-side-text">Sky Diving</h6>
-    <h6 class="pie-side-text">Paintball</h6>
-    <h6 class="pie-side-text">Tattoo Lover</h6> 
   </div>
 </div>
   

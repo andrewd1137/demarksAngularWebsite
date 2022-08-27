@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
     margin-top: 1rem;
-    background-color:#fff;
 }
 
 .home-box
@@ -21,14 +20,12 @@
 
 .box-main-text
 {
-    opacity: 75%;
     font-weight: bold;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 .box-sub-text
 {
-    opacity: 75%;
     font-family: 'Arial Narrow', Arial, sans-serif
 }
 
@@ -47,9 +44,9 @@
 {
     content:" ";
     height: 2px;
-    background: gray;
     display: block;
     position: absolute;
+    color: black;
     top: 50%;
     left: 0;
 }
@@ -58,11 +55,16 @@
 {
     content:" ";
     height: 2px;
-    background: gray;
     display: block;
     position: absolute;
+    color: black;
     top: 50%;
     right: 0;
+}
+
+.project-card
+{
+    display: flex;
 }
 
 .projects-container

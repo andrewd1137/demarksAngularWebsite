@@ -4,23 +4,22 @@
             <a class="button-text" routerLink="/portfolio"><span class="material-icons">
                 arrow_back
                 </span> Back to Portfolio</a>
-            <a class="button-text" href="https://github.com/andrewd1137/My-2-Cents-API" target="_blank" rel="noopener noreferrer">Backend Web API on GitHub</a>
-            <a class="button-text" href="https://github.com/andrewd1137/My-2-Cents-UI" target="_blank" rel="noopener noreferrer">Front End UI on GitHub</a>
+                <a class="button-text" href="https://github.com/andrewd1137/My-2-Cents-API" target="_blank" rel="noopener noreferrer">Backend Web API on GitHub</a>
+                <a class="button-text" href="https://github.com/andrewd1137/My-2-Cents-UI" target="_blank" rel="noopener noreferrer">Front End UI on GitHub</a>
         </div>
-        <h1 class="education-container main-headings">
-            My 2 Cents Banking/Investment
+        <h1 class="project-container main-headings">
+            HTML, CSS, & JavaScript Calculator
         </h1>
     </div>
-    <div class="education-container">
-        <div class="card" style="width: 70%; border: none;">
-            <div class="row">
-              <div class="col">
+    <div class="project-container">
+        <div class="project-card">
+            <div style="min-width: 25%;">
                 <img src="../assets/images/projects/my2centsproj/my2centssmall.png" style="display: block; margin: auto;" class="img-fluid center-block">
-              </div>
-              <div class="col">
-                <div class="card-body">
-                    <h1 class="card-title">About</h1>
-                    <p class="card-text">
+            </div>
+            <div class="project-card-col">
+                <div style="margin-left: 1rem; margin-right: 1rem;">
+                    <h1 class="project-title">About</h1>
+                    <p class="project-text">
                         As a team of about 20 members, we added features and functionalities
                         to this existing banking application. We added functionalities that allow users to help budget their money and invest in crypto/stocks.
                         The project is written in C# for the backend web api and the front end uses Angular. The original application allows users to login
@@ -29,159 +28,137 @@
                         for the account. Below I go into more details about these features the team I was part of added to this app.
                     </p>
                 </div>
-              </div>
             </div>
-          </div>
+        </div>
     </div>
-    <hr class="hr-breaker">
-    <div class="education-container">
-        <div class="card" style="width: 50%; border: none;">
-            <div class="row">
-                <div class="col">
-                    <img src="../assets/images/projects/my2centsproj/technologies.png" style="display: block; margin: auto;" class="img-fluid center-block">
-                </div>
-                <div class="col">
-                    <div class="card-body">
-                        <h1 class="card-title">Technologies</h1>
-                        <p class="card-text">
-                           This is a list of technologies used in our app. The main ones inclue ASP.NET Identity for Authentication, Microsoft Azure
-                           for our SQL DB + Web API, and Angular for the front end using Node JS and Bootstrap. The Back end also had unit testing with MOQ and
-                           the front end used Jasmine and Karma for testing. 
-                        </p>
-                    </div>
+    <div class="project-container">
+        <div class="project-card">
+            <div style="min-width: 25%;">
+                <img src="../assets/images/projects/my2centsproj/technologies.png" style="display: block; margin: auto;" class="img-fluid center-block">
+            </div>
+            <div class="project-card-col">
+                <div style="margin-left: 1rem; margin-right: 1rem;">
+                    <h1 class="project-title">Technologies</h1>
+                    <p class="project-text">
+                        This is a list of technologies used in our app. The main ones inclue ASP.NET Identity for Authentication, Microsoft Azure
+                        for our SQL DB + Web API, and Angular for the front end using Node JS and Bootstrap. The Back end also had unit testing with MOQ and
+                        the front end used Jasmine and Karma for testing. 
+                    </p>
                 </div>
             </div>
-          </div>
+        </div>
     </div>
-    <hr class="hr-breaker">
-    <div class="education-container">
-        <div class="card" style="width: 70%; border: none;">
-            <div class="row">
-                <div class="col">
-                    <img src="../assets/images/projects/my2centsproj/login.png" style="display: block; margin: auto;" class="img-fluid center-block">
-                </div>
-                <div class="col">
-                    <div class="card-body">
-                        <h1 class="card-title">Login</h1>
-                        <p class="card-text">
-                            The login uses the username/email of the user to log them into the system. We used ASP.NET Core Identity to accomplish this.
-                            That way the data is encrypted through Identity and we are able to have a token for the session. As part of our project, we
-                            added Two Factor Authentication to the app. Since it is a banking app, adding more security is crucial in order to prevent
-                            break-ins. You get an email after clicking login which prompts you to click a link to verify the two-factor. Once done, you can
-                            access the pages in our app.
-                        </p>
-                    </div>
+    <div class="project-container">
+        <div class="project-card">
+            <div style="min-width: 25%;">
+                <img src="../assets/images/projects/my2centsproj/login.png" style="display: block; margin: auto;" class="img-fluid center-block">
+            </div>
+            <div class="project-card-col">
+                <div style="margin-left: 1rem; margin-right: 1rem;">
+                    <h1 class="project-title">Login</h1>
+                    <p class="project-text">
+                        The login uses the username/email of the user to log them into the system. We used ASP.NET Core Identity to accomplish this.
+                        That way the data is encrypted through Identity and we are able to have a token for the session. As part of our project, we
+                        added Two Factor Authentication to the app. Since it is a banking app, adding more security is crucial in order to prevent
+                        break-ins. You get an email after clicking login which prompts you to click a link to verify the two-factor. Once done, you can
+                        access the pages in our app.
+                    </p>
                 </div>
             </div>
-          </div>
+        </div>
     </div>
-    <hr class="hr-breaker">
-    <div class="education-container">
-        <div class="card" style="width: 70%; border: none;">
-            <div class="row">
-                <div class="col">
-                    <img src="../assets/images/projects/my2centsproj/register.png" style="display: block; margin: auto;" class="img-fluid center-block">
-                </div>
-                <div class="col">
-                    <div class="card-body">
-                        <h1 class="card-title">Register</h1>
-                        <p class="card-text">
-                            If you do not have an account, you can register for one on this page. It opens a card to input your information.
-                            Once done, it will prompt you to setup Two Factor Authentication. Once that is done, you will be taken to the profile page
-                            in order to fill out the rest of the needed account information. After this, you can start using the app!
-                        </p>
-                    </div>
+    <div class="project-container">
+        <div class="project-card">
+            <div style="min-width: 25%;">
+                <img src="../assets/images/projects/my2centsproj/register.png" style="display: block; margin: auto;" class="img-fluid center-block">
+            </div>
+            <div class="project-card-col">
+                <div style="margin-left: 1rem; margin-right: 1rem;">
+                    <h1 class="project-title">Register</h1>
+                    <p class="project-text">
+                        If you do not have an account, you can register for one on this page. It opens a card to input your information.
+                        Once done, it will prompt you to setup Two Factor Authentication. Once that is done, you will be taken to the profile page
+                        in order to fill out the rest of the needed account information. After this, you can start using the app!
+                    </p>
                 </div>
             </div>
-          </div>
+        </div>
     </div>
-    <hr class="hr-breaker">
-    <div class="education-container">
-        <div class="card" style="width: 50%; border: none;">
-            <div class="row">
-                <div class="col">
-                    <img src="../assets/images/projects/my2centsproj/stockscryptoimg.png" style="display: block; margin: auto;" class="img-fluid center-block">
-                </div>
-                <div class="col">
-                    <div class="card-body">
-                        <h1 class="card-title">Stock/Crypto Investing</h1>
-                        <p class="card-text">
-                            The app allows users to invest in stocks and crypto. The stocks uses the Yahoo Finance data for stock prices and displays
-                            real-time data onto the chart. Users can buy in either USD or in Shares of that company. There are checks that do not allow you to
-                            buy/sell more than you can based on your funds/owned shares. Most of this info goes the same for crypto, but instead of using
-                            Yahoo Finance data, the data is grabbed from Coin Gecko. 
-                        </p>
-                    </div>
+    <div class="project-container">
+        <div class="project-card">
+            <div style="min-width: 25%;">
+                <img src="../assets/images/projects/my2centsproj/stockscryptoimg.png" style="display: block; margin: auto;" class="img-fluid center-block">
+            </div>
+            <div class="project-card-col">
+                <div style="margin-left: 1rem; margin-right: 1rem;">
+                    <h1 class="project-title">Stock/Crypto Investing</h1>
+                    <p class="project-text">
+                        The app allows users to invest in stocks and crypto. The stocks uses the Yahoo Finance data for stock prices and displays
+                        real-time data onto the chart. Users can buy in either USD or in Shares of that company. There are checks that do not allow you to
+                        buy/sell more than you can based on your funds/owned shares. Most of this info goes the same for crypto, but instead of using
+                        Yahoo Finance data, the data is grabbed from Coin Gecko. 
+                    </p>
                 </div>
             </div>
-          </div>
+        </div>
     </div>
-    <hr class="hr-breaker">
-    <div class="education-container">
-        <div class="card" style="width: 50%; border: none;">
-            <div class="row">
-                <div class="col">
-                    <img src="../assets/images/projects/my2centsproj/investmentportfolio.png" style="display: block; margin: auto;" class="img-fluid center-block">
-                </div>
-                <div class="col">
-                    <div class="card-body">
-                        <h1 class="card-title">Investment Portfolio</h1>
-                        <p class="card-text">
-                            There is a section that allows users to see their investments split up between stocks and crypto. They are also able to see
-                            their total investment. They are able to see the lists of all the stocks and crypto they own, the date they bought it, amount
-                            invested (USD), shares owned, price per share (USD), gain/loss, and the USD value of that gain/loss.  
-                        </p>
-                    </div>
+    <div class="project-container">
+        <div class="project-card">
+            <div style="min-width: 25%;">
+                <img src="../assets/images/projects/my2centsproj/investmentportfolio.png" style="display: block; margin: auto;" class="img-fluid center-block">
+            </div>
+            <div class="project-card-col">
+                <div style="margin-left: 1rem; margin-right: 1rem;">
+                    <h1 class="project-title">Investment Portfolio</h1>
+                    <p class="project-text">
+                        There is a section that allows users to see their investments split up between stocks and crypto. They are also able to see
+                        their total investment. They are able to see the lists of all the stocks and crypto they own, the date they bought it, amount
+                        invested (USD), shares owned, price per share (USD), gain/loss, and the USD value of that gain/loss. 
+                    </p>
                 </div>
             </div>
-          </div>
+        </div>
     </div>
-    <hr class="hr-breaker">
-    <div class="education-container">
-        <div class="card" style="width: 50%; border: none;">
-            <div class="row">
-                <div class="col">
-                    <img src="../assets/images/projects/my2centsproj/diversitygraph.png" style="display: block; margin: auto;" class="img-fluid center-block">
-                </div>
-                <div class="col">
-                    <div class="card-body">
-                        <h1 class="card-title">Investment Diversity</h1>
-                        <p class="card-text">
-                            This is a pie chart that shows the user a visual representation of where their money is on the app. They are able
-                            to see the total amount they have in Checking, Savings, Crypto, and Stocks throughtout all their accounts and different
-                            company shares/crypto coins they may own. They are also able to interact with the chart's key at the top. When they click on
-                            one of the elements in the key, it will hide/show this from the chart. This allows them to see their investments on a 
-                            smaller scale. Finally, the user can hover over the information ⓘ to read about how to use the 
-                            chart.
-                        </p>
-                    </div>
+    <div class="project-container">
+        <div class="project-card">
+            <div style="min-width: 25%;">
+                <img src="../assets/images/projects/my2centsproj/diversitygraph.png" style="display: block; margin: auto;" class="img-fluid center-block">
+            </div>
+            <div class="project-card-col">
+                <div style="margin-left: 1rem; margin-right: 1rem;">
+                    <h1 class="project-title">Investment Diversity</h1>
+                    <p class="project-text">
+                        This is a pie chart that shows the user a visual representation of where their money is on the app. They are able
+                        to see the total amount they have in Checking, Savings, Crypto, and Stocks throughtout all their accounts and different
+                        company shares/crypto coins they may own. They are also able to interact with the chart's key at the top. When they click on
+                        one of the elements in the key, it will hide/show this from the chart. This allows them to see their investments on a 
+                        smaller scale. Finally, the user can hover over the information ⓘ to read about how to use the 
+                        chart.
+                    </p>
                 </div>
             </div>
-          </div>
+        </div>
     </div>
-    <hr class="hr-breaker">
-    <div class="education-container">
-        <div class="card" style="width: 50%; border: none;">
-            <div class="row">
-                <div class="col">
-                    <img src="../assets/images/projects/my2centsproj/budget.png" style="display: block; margin: auto;" class="img-fluid center-block">
-                </div>
-                <div class="col">
-                    <div class="card-body">
-                        <h1 class="card-title">Budget Calculator</h1>
-                        <p class="card-text">
-                            This part of the app allows users to calculate their budget easily. All the user needs to do is
-                            input their income and expenses and then the app will calculate their ideal budget. It does this by
-                            using the 50 - 30 - 20 Rule. This rule basically says that you should divide up your after-tax income
-                            and allocate it to spend: 50% on needs, 30% on wants, and 20% into savings. The app will take away from
-                            users wants if their needs category is larger than 50%. It also takes a few other things into consideration
-                            when calculating. Finally, This information is shows and explained to the user at each step to give them
-                            a detailed explaination. They also recieve a graph for a visual representation.
-                        </p>
-                    </div>
+    <div class="project-container">
+        <div class="project-card">
+            <div style="min-width: 25%;">
+                <img src="../assets/images/projects/my2centsproj/budget.png" style="display: block; margin: auto;" class="img-fluid center-block">
+            </div>
+            <div class="project-card-col">
+                <div style="margin-left: 1rem; margin-right: 1rem;">
+                    <h1 class="project-title">Budget Calculator</h1>
+                    <p class="project-text">
+                        This part of the app allows users to calculate their budget easily. All the user needs to do is
+                        input their income and expenses and then the app will calculate their ideal budget. It does this by
+                        using the 50 - 30 - 20 Rule. This rule basically says that you should divide up your after-tax income
+                        and allocate it to spend: 50% on needs, 30% on wants, and 20% into savings. The app will take away from
+                        users wants if their needs category is larger than 50%. It also takes a few other things into consideration
+                        when calculating. Finally, This information is shows and explained to the user at each step to give them
+                        a detailed explaination. They also recieve a graph for a visual representation.
+                    </p>
                 </div>
             </div>
-          </div>
+        </div>
     </div>
     <div style="margin-top: 3rem;">
         <app-footer></app-footer>

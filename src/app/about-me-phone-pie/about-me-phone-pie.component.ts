@@ -26,9 +26,9 @@ import { fadeIn } from 'ng-animate';
   })
   export class AboutMePhonePieComponent implements AfterViewInit{
     transition:string = 'none';
-    showGamer:boolean = true;
+    showGamer:boolean = false;
     showDeveloper:boolean = false;
-    showAdventurer:boolean = false;
+    showAdventurer:boolean = true;
 
     @ViewChild(BaseChartDirective) chart: BaseChartDirective | undefined;
     //For Rest of page
@@ -52,12 +52,13 @@ import { fadeIn } from 'ng-animate';
     };
 
     public pieChartData: ChartData<'pie', number[], string | string[]> = {
-      labels: [ ['Developer'], ['Gamer'], ['Adventurer'] ],
+      labels: [ ['Developer'], ['Adventurer'], ['Gamer'] ],
       datasets: [ {
         data: [ 3, 3, 3 ],
         backgroundColor: [ 'lightgray', 'darkgray', 'black' ],
         hoverBackgroundColor: [ 'white' ],
-        hoverBorderColor: [ 'lightgray', 'darkgray', 'black' ],
+        hoverBorderColor: [ 'white' ],
+        borderColor: [ 'black' ],
       } ]
     };
     public pieChartType: ChartType = 'pie';
@@ -76,16 +77,16 @@ import { fadeIn } from 'ng-animate';
         }
         case 1:
         {
-          this.showGamer = true;
+          this.showGamer = false;
           this.showDeveloper = false;
-          this.showAdventurer = false;
+          this.showAdventurer = true;
           break;
         }
         case 2:
         {
-          this.showGamer = false;
+          this.showGamer = true;
           this.showDeveloper = false;
-          this.showAdventurer = true;
+          this.showAdventurer = false;
           break;
         }
       }

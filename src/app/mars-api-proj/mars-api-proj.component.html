@@ -4,22 +4,21 @@
             <a class="button-text" routerLink="/portfolio"><span class="material-icons">
                 arrow_back
                 </span> Back to Portfolio</a>
-            <a class="button-text" href="https://github.com/andrewd1137/MarsRoverPhotos" target="_blank" rel="noopener noreferrer">Check it out on GitHub!</a>
+                <a class="button-text" href="https://github.com/andrewd1137/MarsRoverPhotos" target="_blank" rel="noopener noreferrer">Check it out on GitHub!</a>
         </div>
-        <h1 class="education-container main-headings">
+        <h1 class="project-container main-headings">
             Mars Rover Photos (using one of NASAs APIs)
         </h1>
     </div>
-    <div class="education-container">
-        <div class="card" style="width: 70%; border: none;">
-            <div class="row">
-              <div class="col">
+    <div class="project-container">
+        <div class="project-card">
+            <div style="min-width: 25%;">
                 <img src="../assets/images/projects/marsroverproj/nasalogo.png" style="display: block; margin: auto;" class="img-fluid center-block">
-              </div>
-              <div class="col">
-                <div class="card-body">
-                    <h1 class="card-title">About</h1>
-                    <p class="card-text">
+            </div>
+            <div class="project-card-col">
+                <div style="margin-left: 1rem; margin-right: 1rem;">
+                    <h1 class="project-title">About</h1>
+                    <p class="project-text">
                         This is an Angular app I made using one of NASAs Web APIs 
                         (<a href="https://api.nasa.gov/" target="_blank" rel="noopener noreferrer">api.nasa.gov</a>).
                         The app uses the API to grab photos from Mars on a given sol day and it also shows the 
@@ -29,52 +28,45 @@
                         two using the Show/Hide image button (text changes based on which setting you are currently on).
                     </p>
                 </div>
-              </div>
             </div>
-          </div>
+        </div>
     </div>
-    <hr class="hr-breaker">
-    <div class="education-container">
-        <div class="card" style="width: 70%; border: none;">
-            <div class="row">
-                <div class="col">
-                    <img src="../assets/images/projects/marsroverproj/searchedsol.png" style="display: block; margin: auto;" class="img-fluid center-block">
-                </div>
-                <div class="col">
-                    <div class="card-body">
-                        <h1 class="card-title">Search a SOL or Get Random SOL</h1>
-                        <p class="card-text">
-                            You can find pictures for a SOL day by entering a number into the search bar and clicking the button. The app
-                            will then get the pictures from NASAs API and display them onto the screen. You can also get the images by 
-                            hitting the Random button. This will grab you a random sol day using Math.Random. *Note: Some SOLs do not contain API
-                            information so the site will just display nothing if you search a day without pictures. I did not add any error
-                            checking for this at the time of this website's release.*
-                        </p>
-                    </div>
+    <div class="project-container">
+        <div class="project-card">
+            <div style="min-width: 25%;">
+                <img src="../assets/images/projects/marsroverproj/searchedsol.png" style="display: block; margin: auto;" class="img-fluid center-block">
+            </div>
+            <div class="project-card-col">
+                <div style="margin-left: 1rem; margin-right: 1rem;">
+                    <h1 class="project-title">Search a SOL or Get Random SOL</h1>
+                    <p class="project-text">
+                        You can find pictures for a SOL day by entering a number into the search bar and clicking the button. The app
+                        will then get the pictures from NASAs API and display them onto the screen. You can also get the images by 
+                        hitting the Random button. This will grab you a random sol day using Math.Random. *Note: Some SOLs do not contain API
+                        information so the site will just display nothing if you search a day without pictures. I did not add any error
+                        checking for this at the time of this website's release.* 
+                    </p>
                 </div>
             </div>
-          </div>
+        </div>
     </div>
-    <hr class="hr-breaker">
-    <div class="education-container">
-        <div class="card" style="width: 70%; border: none;">
-            <div class="row">
-                <div class="col">
-                    <img src="../assets/images/projects/marsroverproj/showimg.png" style="display: block; margin: auto;" class="img-fluid center-block">
-                </div>
-                <div class="col">
-                    <div class="card-body">
-                        <h1 class="card-title">Show/Hide Image</h1>
-                        <p class="card-text">
-                            The site will default show you the table in the image above. However, if you would like to see the images
-                            (aka the main point of this app), you can click the button to show the images. As you can see in the image to
-                            the left, this image was from SOL 2676 using the Front Hazard Avoidance Camera. The Earth Date of this image was
-                            Februrary 2nd, 2020 and was taken using the Curiosity Rover. 
-                        </p>
-                    </div>
+    <div class="project-container">
+        <div class="project-card">
+            <div style="min-width: 25%;">
+                <img src="../assets/images/projects/marsroverproj/showimg.png" style="display: block; margin: auto;" class="img-fluid center-block">
+            </div>
+            <div class="project-card-col">
+                <div style="margin-left: 1rem; margin-right: 1rem;">
+                    <h1 class="project-title">Show/Hide Image</h1>
+                    <p class="project-text">
+                        The site will default show you the table in the image above. However, if you would like to see the images
+                        (aka the main point of this app), you can click the button to show the images. As you can see in the image to
+                        the left, this image was from SOL 2676 using the Front Hazard Avoidance Camera. The Earth Date of this image was
+                        Februrary 2nd, 2020 and was taken using the Curiosity Rover. 
+                    </p>
                 </div>
             </div>
-          </div>
+        </div>
     </div>
     <div style="margin-top: 3rem;">
         <app-footer></app-footer>

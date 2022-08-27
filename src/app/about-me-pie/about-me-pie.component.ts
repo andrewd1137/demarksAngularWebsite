@@ -67,7 +67,8 @@ import { fadeIn, fadeInLeft, fadeInRight, fadeInUp, flipInX, zoomIn } from 'ng-a
         data: [ 3, 3, 3 ],
         backgroundColor: [ 'lightgray', 'darkgray', 'black' ],
         hoverBackgroundColor: [ 'white' ],
-        hoverBorderColor: [ 'lightgray', 'darkgray', 'black' ],
+        hoverBorderColor: [ 'white' ],
+        borderColor: [ 'black' ],
       } ]
     };
     public pieChartType: ChartType = 'pie';
