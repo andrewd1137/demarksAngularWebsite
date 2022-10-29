@@ -1,6 +1,7 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { transition, trigger, useAnimation } from '@angular/animations';
 import { bounceInLeft, bounceInRight, fadeIn, rubberBand, tada } from 'ng-animate';
+import * as AOS from "aos"
 
 @Component({
   selector: 'app-home',
@@ -39,7 +40,7 @@ import { bounceInLeft, bounceInRight, fadeIn, rubberBand, tada } from 'ng-animat
     ])
   ] 
 })
-export class HomeComponent implements AfterViewInit{
+export class HomeComponent implements AfterViewInit, OnInit{
   alertMessage: boolean = true;
   
   transition:string = 'none';
@@ -72,6 +73,11 @@ export class HomeComponent implements AfterViewInit{
 
   constructor() { }
   
+  ngOnInit(): void {
+    AOS.init();
+    alert("I am Currently adding new and onscroll animations to the page. Site might be a little buggy especially on a phone/tablet. Don't hate on me :)");
+  }
+
   ngAfterViewInit(): void {
     this.transition = 'none';
     this.alertMessage = true;

@@ -1,9 +1,10 @@
-import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import DatalabelsPlugin from 'chartjs-plugin-datalabels';
 import { ChartConfiguration, ChartData, ChartType } from 'chart.js';
 import { BaseChartDirective } from 'ng2-charts';
 import { transition, trigger, useAnimation } from '@angular/animations';
-import { fadeIn, fadeInLeft, fadeInRight, fadeInUp, flipInX, zoomIn } from 'ng-animate';
+import { fadeIn, fadeInLeft, fadeInRight, fadeInUp } from 'ng-animate';
+import * as AOS from 'aos'
 
 @Component({
     selector: 'app-about-me-pie',
@@ -36,7 +37,7 @@ import { fadeIn, fadeInLeft, fadeInRight, fadeInUp, flipInX, zoomIn } from 'ng-a
       ]),
     ]
   })
-  export class AboutMePieComponent implements AfterViewInit{
+  export class AboutMePieComponent implements AfterViewInit, OnInit{
     transition:string = 'none';
 
     @ViewChild(BaseChartDirective) chart: BaseChartDirective | undefined;
@@ -73,6 +74,10 @@ import { fadeIn, fadeInLeft, fadeInRight, fadeInUp, flipInX, zoomIn } from 'ng-a
     };
     public pieChartType: ChartType = 'pie';
     public pieChartPlugins = [ DatalabelsPlugin ];
+
+    ngOnInit(): void {
+      AOS.init()
+    }
 
     ngAfterViewInit(): void {
       this.transition = 'none';

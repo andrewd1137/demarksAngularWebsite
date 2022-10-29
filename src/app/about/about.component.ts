@@ -1,5 +1,6 @@
 import { transition, trigger, useAnimation } from '@angular/animations';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 import { fadeIn, flipInX, rubberBand, slideInLeft, slideInRight } from 'ng-animate';
 
 @Component({
@@ -51,11 +52,11 @@ export class AboutComponent implements OnInit, AfterViewInit {
 
   aboutMeImg:string = "../assets/images/homeandabout/holyland.jpg";
   aboutMe:string = "I am a software developer that currently lives on the East Coast of the US. I really enjoy web development. " +
-  "I find myself as more of a front end kinda guy (which shouldn't be much of a surprise with this website). When I'm " +
+  "I enjoy making website and web applications (which shouldn't be much of a surprise). When I'm " +
   "not banging my head against my desk debugging...I mean coding, I'm usually either at that same desk playing video games, playing piano, bowling, scuba diving, or " +
   "on the occasional adventure.";
 
-  alwaysLearningImg:string = "../assets/images/homeandabout/playingpiano.jpg";
+  alwaysLearningImg:string = "../assets/images/homeandabout/scuba.PNG";
   alwaysLearning:string = "Apart from being a software developer in an ever changing field, I also enjoy trying out new things. I recently " +
   "started bowling in late 2020. I play piano and take weekly lessons. I learned how to scuba dive in 2022 and plan to continue my " +
   "certifications and experience. I also plan to one day learn how to skydive and how to fly a plane.";
@@ -87,6 +88,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
   {
     //will display the default about me text;
     this.showText(1);
+    AOS.init()
   }
 
   resetActives()
