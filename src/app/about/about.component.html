@@ -42,21 +42,21 @@
   <h1 class="about-phone-title">
     Tap Image to cycle through more about me!
   </h1>
-  <div [@fadeInState]="fadeIn">
+  <div *ngFor="let info in aboutMeList">
     <div style="min-width: 25%;">
-        <img [src]="headingImage" width="100%" style="display: block; margin: auto;" (click)="cycleAboutMe()">
+        <img [src]="info.headingImage" width="100%" style="display: block; margin: auto;">
     </div>
     <div style="margin-left: 1rem; margin-right: 1rem;">
-      <h3 class="about-phone-sub-title">{{aboutMeTitle}}</h3>
+      <h3 class="about-phone-sub-title">{{info.aboutMeTitle}}</h3>
       <p class="about-phone-text">
-        <span><p class="about-phone-text">{{displayText}}
+        <span><p class="about-phone-text">{{info.displayText}}
           <!-- the span below only shows if you click on the nasa image -->
-          <span *ngIf="active4">(<a href="https://api.nasa.gov/" target="_blank" rel="noopener noreferrer">api.nasa.gov</a>) 
+          <span *ngIf="info.astronaut">(<a href="https://api.nasa.gov/" target="_blank" rel="noopener noreferrer">api.nasa.gov</a>) 
             in a coding project. Check it out my portfolio page on this site!</span></p>
         </span>
       </p>
     </div>
-    <app-about-me-phone-pie></app-about-me-phone-pie>
+  </div>
+  <app-about-me-phone-pie></app-about-me-phone-pie>
   <app-footer></app-footer>
-</div>
-    
+</div>    

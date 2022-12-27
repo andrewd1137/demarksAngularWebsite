@@ -1,7 +1,8 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { transition, trigger, useAnimation } from '@angular/animations';
+import { animate, state, style, transition, trigger, useAnimation } from '@angular/animations';
 import { bounceInLeft, bounceInRight, fadeIn, rubberBand, tada } from 'ng-animate';
 import * as AOS from "aos"
+import { delay } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -33,16 +34,19 @@ import * as AOS from "aos"
       }))
     ]),
     trigger('fadeInState', [
-      transition('void => *', useAnimation(fadeIn, {
-        // Set the duration to 5seconds and delay to 2seconds
-        params: { timing: 1 }
-      }))
+      state('void', style({
+        visibility: 'hidden'
+      })),
+      state('none', style({
+        visibility: 'visible'
+      })),
+      transition('void => none', 
+        animate('3s'),
+      )
     ])
   ] 
 })
 export class HomeComponent implements AfterViewInit, OnInit{
-  alertMessage: boolean = true;
-  
   transition:string = 'none';
   fadeIn:string = 'none';
 
@@ -74,17 +78,15 @@ export class HomeComponent implements AfterViewInit, OnInit{
   constructor() { }
   
   ngOnInit(): void {
-    AOS.init();
-    alert("I am Currently adding new and onscroll animations to the page. Site might be a little buggy especially on a phone/tablet. Don't hate on me :)");
+    
   }
 
   ngAfterViewInit(): void {
-    this.transition = 'none';
-    this.alertMessage = true;
-  }
-
-  showHideAlert() {
-    this.alertMessage = false;
+    if(screen.height > 1023)
+    {
+      this.transition = 'none';
+      this.fadeIn = 'none';
+    }
   }
   
   //All the states for 'Adventuruous' word on home page

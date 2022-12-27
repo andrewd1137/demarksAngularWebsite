@@ -1,5 +1,5 @@
 <div class="home-container">
-    <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000" class="home-box">
+    <div [@transitionLeftState]="transition" class="home-box">
         <span [@rubberBandState]="adventureStateA" class="box-main-text" 
             (mouseover)="changeAdventureTextA=true" (mouseout)="changeAdventureTextA=false">A
         </span>
@@ -35,7 +35,7 @@
         </span>
     </div>
     <!-- --------------------------------------------Divider---------------------------------------------------- -->
-    <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000" class="home-box home-box-fill">
+    <div [@transitionRightState]="transition" class="home-box home-box-fill">
         <span [@tadaState]="developerStateD" class="box-main-text" 
             (mouseover)="changeDeveloperTextD=true" (mouseout)="changeDeveloperTextD=false">D
         </span>
@@ -64,11 +64,11 @@
             (mouseover)="changeDeveloperTextR=true" (mouseout)="changeDeveloperTextR=false">r
         </span>
     </div>
-    <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000" class="home-box"><img class="home-img" src="../assets/images/homeandabout/freefall.png" style="overflow-y: none;"></div>
-    <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000" class="home-box"><img class="home-img" src="../assets/images/homeandabout/setup.png" style="overflow-y: none;"></div>
+    <div [@transitionLeftState]="transition" class="home-box"><img class="home-img" src="../assets/images/homeandabout/freefall.png" style="overflow-y: none;"></div>
+    <div [@transitionRightState]="transition" class="home-box"><img class="home-img" src="../assets/images/homeandabout/setup.png" style="overflow-y: none;"></div>
 </div>
     
-<div data-aos="fade-up" data-aos-delay="2000">
+<div [@fadeInState]="transition" class="personalFavProjs" style="visibility: hidden;">
     <h3 class="projects-heading">Personal Favorite Projects</h3>
     <div class="card-group projects-container">
         <div class="card text-white bg-dark projects-margin" style="border: none;">
@@ -107,5 +107,5 @@
           </div>
         </div>
     </div>
-    <app-footer data-aos="fade-up" data-aos-delay="500"></app-footer>
+    <app-footer></app-footer>
 </div>

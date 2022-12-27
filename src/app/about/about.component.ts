@@ -46,6 +46,8 @@ export class AboutComponent implements OnInit, AfterViewInit {
   active4:boolean = false;
   active5:boolean = false;
 
+  aboutMeList: any = [];
+
   displayText:string = "";
   aboutMeTitle:string = "";
   headingImage:string = "";
@@ -88,7 +90,8 @@ export class AboutComponent implements OnInit, AfterViewInit {
   {
     //will display the default about me text;
     this.showText(1);
-    AOS.init()
+    AOS.init();
+    this.populateAboutMe();
   }
 
   resetActives()
@@ -101,22 +104,40 @@ export class AboutComponent implements OnInit, AfterViewInit {
     this.active5 = false;
   }
 
-  cycleAboutMe()
+  populateAboutMe()
   {
-    this.index = this.index + 1;
-    if(this.index === 6)
-    {
-      this.index = 1;
-    }
-    this.showText(this.index);
-    if(this.fadeIn === 'maximum')
-    {
-      this.fadeIn = "Fade IN";
-    }
-    else
-    {
-      this.fadeIn = "maximum";
-    }
+    this.aboutMeList = [
+      {
+        displayText: this.aboutMe, 
+        boutMeTitle: "About Me",
+        headingImage: this.aboutMeImg,
+        astronaut: false
+      },
+      {
+        displayText: this.alwaysLearning, 
+        boutMeTitle: "Always Learning",
+        headingImage: this.alwaysLearningImg,
+        astronaut: false
+      },
+      {
+        displayText: this.traveling, 
+        boutMeTitle: "Traveling",
+        headingImage: this.travelingImg,
+        astronaut: false
+      },
+      {
+        displayText: this.lifeGoal, 
+        boutMeTitle: "Life Goal",
+        headingImage: this.lifeGoalImg,
+        astronaut: true
+      },
+      {
+        displayText: this.videoGames, 
+        boutMeTitle: "I Love Video Games",
+        headingImage: this.videoGamesImg,
+        astronaut: false
+      },
+    ]
   }
 
   showText(textNum:number)
